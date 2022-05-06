@@ -4,19 +4,24 @@
 \pagestyle{fancy}
 \setlength{\headheight}{15pt}
 
-\usepackage[LGR, T1]{fontenc}
-\usepackage{gfsartemisia}[12pt]
+\usepackage{fontspec}
+\setmainfont{GFS Artemisia}
+\renewcommand\bibname{Βιβλιογραφία}
+% \usepackage[LGR, T1]{fontenc}
 % Greek-specific commands
-\usepackage[greek]{babel}
+%\usepackage[greek]{babel}
 
+\title{first page of the whole paper}
 
-\title{\textlatin{first page of the whole paper}}
-
-\author{\textlatin{Konstantina Saketou}}
-\date{\textlatin{April 2022}}
+\author{Konstantina Saketou}
+\date{April 2022}
 \begin{document}
 
 \maketitle
+
+Some text in english.
+
+Κείμενο στα ελληνικά.
 
 \input{thesis/main}
 \input{internship/main}
@@ -24,7 +29,6 @@
 
 \nocite{*}
 
-\selectlanguage{english}
 \bibliographystyle{unsrt}
 \bibliography{thesis/thesis_bibliography.bib}
 
