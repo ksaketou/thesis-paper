@@ -2,14 +2,16 @@
 \usepackage[a4paper, width=170mm, top=25mm,bottom=25mm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{graphics}
-\pagestyle{fancy}
-\setlength{\headheight}{15pt}
+\pagestyle{empty}
+\setlength{\headheight}{12pt}
 
 \usepackage{polyglossia}
 \setmainlanguage[variant=mono]{greek}
 \setotherlanguage{english}
 
+\usepackage{hyperref}
 \usepackage{fontspec}
+\renewcommand\thesection{\arabic{section}}
 \setmainfont{GFS Artemisia}
 \renewcommand\bibname{References}
 % \usepackage[LGR, T1]{fontenc}
