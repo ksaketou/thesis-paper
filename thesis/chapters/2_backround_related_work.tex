@@ -3,20 +3,45 @@ This section sets the scene around the topic areas that will be discussed in thi
 provide some context related to Software Testing phases and processes. Then we briefly present studies we found that are similar to this one, compare them and consequently, 
 identify the gap that this paper targets to fill. 
 
-\section {Overview of NLP and Software Testing}
+\section {Overview of Software Testing and NLP}
+
+Some kind of software is now present in every form of computer that exists these days, whereas no daily activity can be completed without using one. However, this leads to the expectations we 
+form for that software to be extremely high since it has to perform at its best every time it is being used. Consequently, this has created the need to ensure the overall quality and functionality of that 
+software. That is the role of Software Testing. According to Bourque et al \cite{swebok}, "\emph{Software testing consists of the dynamic verification that a program provides expected behaviors on a 
+finite set of test cases, suitably selected from the usually infinite execution domain}".\\
+
+The testing process has four key issues \cite{swebok}. The first one is that these days it is necessary to be performed using dynamic 
+inputs and not static ones in order to ensure the adaptability of the program under test. Secondly, the number of test cases created should not be infinite, although this is feasible in almost every kind 
+of program and that is why it should be avoided. The third issue is that the selection of the testing techniques that will be used, should be perfomed very carefully, taking into consideration different 
+aspects of the program to be tested, such as its functionality and other risks involved. Finally, the testing outcomes should be clear and easy for the test engineer to estimate if they are acceptable. 
+In any other case, it means that the tests executed do not provide any substantial information for the condition and the quality of the software. \\
+
+Another significant knowledge area that this paper focuses on is Natural Language Processing (NLP). According to Liddy E.D. \cite{liddy2001natural}, "\emph{Natural Language Processing is a theoretically motivated 
+range of computational techniques for analyzing and representing naturally occurring texts at one or more levels of linguistic analysis for the purpose of achieving human-like language processing for a 
+range of tasks or applications}". NLP aims to process text with a human-like approach, by transforming textual information into a structure understandable by the computer. Nowadays, NLP is an intensely growing 
+field and it keeps being constantly developed. It can be applied in a variety of ways, but Information Extraction (IE) is one which we will frequently come across in this paper. \\
+
+Information Extraction aims to identify information structures and relationships between entities included in these structures from unstructured sources \cite{infoextraction}. It is now a very well-known 
+method in the NLP community with many applications in fields like machine learning, databases, web, document analysis and others. Sarawagi \cite{infoextraction} refers to these applications by separating them 
+into several categories with some of them being Enterprise Applications, Personal Information Management, Scientific Applications and Web Oriented Applications. Many of the ones explained in these categories 
+are related to document processing (e.g. organization of files and projects), databases (e.g. data cleaning, management of citation databases) and management of user activity on the web (e.g. comparison shopping 
+websites, placement of ads in webpages etc.). The wide usage of IE is, thus, very clear based on the different types of applications refered above and it is no surprise that many of the approaches studied in 
+this paper utilize IE. \\
+
+At the below section, we present the results of the research that was made in order to map the already existing Literature Reviews related to the subject we study in this paper.
 
 \section{Related Work}
 
-Several other papers have been created that are close to the currently studied area. Four such studies where found \cite{garousi2020nlp,battina2019artificial,ahsan2017comprehensive,escalona2011overview} 
+Several other papers have been created that are close to the current research area. Four such studies where found \cite{garousi2020nlp,battina2019artificial,ahsan2017comprehensive,escalona2011overview} 
 and are shortly presented in this section. Garousi et al. \cite{garousi2020nlp}, conducted a Systematic Literature Mapping regarding NLP-assisted software testing methods suggested in a pool 
 of 67 papers. This mapping study classifies and overviews a list of 38 identified tools. Goal of this paper was to provide practicioners with useful information about the reasons for which 
 the use of such tools might benefit their current practise. Moreover, Ahsan et al \cite{ahsan2017comprehensive}, investigated 16 papers which contained a total of 6 NLP-based techniques and 
 18 tools with the same purpose. \\
 
-Trudova et al \cite{battina2019artificial}, created a Systematic Literature Review aiming to highlight the role of Artificial Intelligence in Automation Testing. 
+Trudova et al \cite{battina2019artificial} created a Systematic Literature Review aiming to highlight the role of Artificial Intelligence in Automation Testing. 
 They explore the influence of AI on the testing processes without focusing only on NLP techniques. The authors reviewed 34 papers where they identified 9 distinct software testing activities. 
 The last study identified was the one conducted by Escalona et al \cite{escalona2011overview}, which focuses on NLP techniques regarding the automation of the test cases generation process. 
-The analysis was performed between 24 approaches with a goal to determine the state of the art in the related area. The summary of the identified studies is displayed in Table 1 below.\\
+The analysis was performed between 24 approaches with a goal to determine the state of the art in the related area. The summary of the identified studies is displayed in Table 1. \\
 
 \begin{table}
 \resizebox{\columnwidth}{!}{%
@@ -25,7 +50,7 @@ The analysis was performed between 24 approaches with a goal to determine the st
     \hline
     \multicolumn{6}{|c|}{Table 1. SLRs identified about NLP and Software Testing} \\
     \hline
-    Paper Title& Year & Reference & Papers studied & Focus Area & Empasis on\\
+    Title & Year & Reference & Papers studied & Focus Area & Empasis on\\
     \hline
         NLP-assisted software testing: A systematic mapping of the literature   & 2020    & \cite{garousi2020nlp}&   67 & NLP & NLP Tools \\
         \hline Artificial Intelligence in Software Test Automation: A Systematic Literature Review & 2020 & \cite{battina2019artificial} &  34 & Artificial Intelligence & Software Testing field\\
@@ -37,9 +62,9 @@ The analysis was performed between 24 approaches with a goal to determine the st
 }
 \end{table}
 
+% TODO: SLR in software Engineering ??
 
-
-Having made a short reference to the already existing work, we notice that none of the above papers focus on NLP techniques, different application types (tool, framework, algorithm etc.) and 
+Having made a short reference to the already existing work, we notice that none of the above papers focuses on NLP techniques, different application types (tool, framework, algorithm etc.) and 
 different stages of software testing at the same time. In this paper, we emphasize on studies that refer to NLP techniques, possibly propose a variety of approach types and can improve different phases 
 of the Software Testing stages (e.g. requirement analysis, implementation, execution). We aim to form a broader overview of the way that NLP and Software Testing fields now cooperate to optimize 
 the quality of software.
