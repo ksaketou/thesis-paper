@@ -1,0 +1,49 @@
+\chapter*{Results}
+
+In this section we present the results of our Systematic Literature Review and the study of the papers identified. We separately refer to 
+each Research Question individually by commenting and making a short reference to the results found. In some sections and always depending on the RQ, we further analyze any 
+techniques or practices encountered.
+
+\subsection*{RQ1: What is the proposed contribution type?}
+After reviewing all of the papers, we ended up with several contribution types proposed in their context. At this point, we should note that some papers 
+proposed more than one types so some of them are included into more than one categories. \\
+
+The first and most encountered contribution type is that of a method technique. This type includes any proposal of approaches, processes, techniques and any 
+other alternative way of performing a certain task. We grouped them all into this category since they all somehow refer to something very similar. Specifically, 20 of the
+studied papers suggest such an approach of that type. 9 out those 20 papers (45\%) propose a way for generating test cases automatically from different input types, like 
+use case specification and funtional requirement documents. Motwani et al \cite{8812070}, for example, present Swami which is a language-agnostic test case constructor 
+based on Javascript code templates and the ECMA-262 Standard. Swami generates test case code based on the code documentation and software specifications provided. Moreover, 
+Nogueira et al \cite{nogueira2015automatic} propose an event flow for test case generation from input provided in a Control Flow Language. This flow consists of several other 
+processes (e.g. translation of use case descriptions) that contribute to the achievemennt of the overall goal of the proposal. \\
+
+Another significant contribution type we distinguished is that of a tool. 14 of the studied papers suggest some sort of tool for the ease of different software testing processes. 
+Some of those tools are part of the overall approach, whereas others are the main focus of the study. Some of them target the test case execution process, others focus on test case 
+generation or even other areas like defects prevention and requirement analysis facilitation. Pedemonte et al \cite{pedemonte2012towards} present an approach to convert manual 
+functional tests into a state ready for automatic execution by using Machine Learning methods to process textual information. This is a semi-automatic approach since in cases 
+of textual information ambiguity, the user is prompted to interact with the tool to resolve the issue and provide the answer required to continue with the process. Another 
+considerable approach is the CTRAS tool created by Hao et al \cite{8811987} which aims at the summarization of duplicate test reports in oprder to make them easily understandable 
+by developers. The tool idenitfies similarities in both textual information and screenshots and comprehensibly presents them into a single report. \\
+
+Several other papers focused on developing a Framework to achieve their goal. Some of them refer to the topic of test case generation while others 
+emphasize on the earlier stage of requirement analysis and transformation. Lafi et al \cite{9491761} created a framework which consists of different other 
+processes in order to generate test cases. First of all, the use case descriptions are being processed in order to create a control flow graph and an NLP table of the 
+system under test. Based on those, test paths are then generated which they will finally lead to the test case code. As far as the requirement analysis phase 
+is concerned, Viggiato et al \cite{viggiato2022using} created a framework in order to help testers improve the test cases they create. This framework 
+accepts test cases in natural language as input and then provides recommendations and proposed changes. More specifically, it can provide recommendations 
+for the improvement of the terminology of the test cases, it can identify potentially missing test steps from those test cases and lastly, it can 
+prevent test case duplicates since it is able to identify similar test cases with the one which is currently being analyzed. All of the above three 
+outputs contribute immensely to the proper and effective forming of test cases by making the testers' job much easier. \\
+
+The last contribution type spotted is the proposal of some sort of strategy. This might be a certain way of handling or working on a specific process which 
+could include the use of some specific method or tool. Yet again, the papers we identified serve different kinds of purposes on different stages 
+of testing. Wong et al \cite{wong2015dase} propose DASE, a path pruning strategy which aims to improve test case execution and bug detection. It can also prevent 
+defects and increase test coverage. It operates by extracting input constraints from program documentation in order to guide and form test execution paths. 
+Moreover, Tahvili et al \cite{10.1145/3195538.3195540} proposed a strategy which, given test specifications in natural language, idntifies relationships 
+between those test cases and finally, generates a series of proposed tets case scheduling strategies for execution. This is great way to effectively 
+prioritize the test case execution process and optimize test case execution. \\
+
+After the analysis of the identified contribution types of the papers studied, we notice that the majority of scientific contributions revovle around 
+the proposal of a technique or method of performing a process. This is not something unexpected. Software Testing consists of any major processes, like 
+tets case generation, test planning, defect prevention and others, which shape all together the overall purpose of this knowledge area. Thus, the fact that 
+many researchers and people interested in the field have figured out ways to enhance those methods makes a lot of sense. They have achieved 
+that by proposing new tehniques that be integrated to these processes and give out great results.
