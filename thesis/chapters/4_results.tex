@@ -1,10 +1,11 @@
 \chapter*{Results}
+\addcontentsline{toc}{chapter}{Results}
 
 In this section we present the results of our Systematic Literature Review and the study of the papers identified. We separately refer to 
 each Research Question individually by commenting and making a short reference to the results found. In some sections and always depending on the RQ, we further analyze any 
 techniques or practices encountered.
 
-\subsection*{RQ1: What is the proposed contribution type?}
+\section {Contribution Type}
 After reviewing all of the papers, we ended up with several contribution types proposed in their context. At this point, we should note that some papers 
 proposed more than one types so some of them are included into more than one categories. \\
 
@@ -47,3 +48,58 @@ the proposal of a technique or method of performing a process. This is not somet
 tets case generation, test planning, defect prevention and others, which shape all together the overall purpose of this knowledge area. Thus, the fact that 
 many researchers and people interested in the field have figured out ways to enhance those methods makes a lot of sense. They have achieved 
 that by proposing new tehniques that be integrated to these processes and give out great results.
+
+\section {Software Testing Stage}
+Another aspect of the papers we studied that we are intersted in is the Stage of the Software Testing Lifecycle to which they apply. Some of the approaches we found refer to 
+the Requirement Analysis phase, others to the Implementation and Development, Execution etc. The first one we will comment here is the Requirement Analysis. Almost 18\% of the studies 
+come up with a proposal regarding that stage and they target to enhance the processing of the test requirements and specifications. This procedure happens before the construction 
+of the test cases of any form and it is a critical stage which many times determines the overall outcome of the testing cycle. Thus, it is of major importance to effectivelly 
+perform the Requirement Analysis for the optimal result. \\
+
+Sainani et al \cite{reqclass}, for example, propose a method technique which idenitfies and classifies requirements from software engineering contracts. These documents contain all 
+the necessary information about the product to be developed, and therefore tested, with the desired characteristics and specifications being a part of them. The developed approach 
+analyzes the contract document using different NLP techniques, which we will discuss in a further section, and outputs the different requirements of the product as well as their type. 
+The output might add important information regarding the product's architecture or the importance of each feature. Based on that, developers and testers get a clear overview of what 
+is worth to be tested more and also the parts that need more attention during the development and testing. This method refers to very early steps on software testing. However, 
+this does not mean that such a process is not significant for a successfull testing cycle. On the contrary, it sets a concrete base for all the other stages that follow. \\
+
+Equal importance to the Requirement Analysis stage is given by Femmer et al \cite{femmer2017rapid}. They propose a tool called Smella, which identifies Requirement Smells inside 
+Requirement documents. At this point, it is worth mentioning what Requirement Smells actually are. Code smells are parts of code that need to be somehow changed in order to enhance 
+its structure, complexity or comprehension \cite{fowler2018refactoring}. Consequently, Requirement Smells represent spots of Requirement Documents which need to be modified in a 
+certain way in order for the product's specifications to be stated with the optimal way. For example, in a certain document it is possible to have the same requirement expressed in 
+a different way. This might happen due to syntax mistakes or overall use of complex syntax in the document, which makes comprehension a harder task for the reader. This is 
+the job of the Smella tool. By making good use of different NLP techniques and incorporating them into the tool, the authors managed to perform the processed described above. \\
+
+The next stage we will refer to in this section is Software Test Planning which contains tasks like Effort Estimation and the overall planning of the roadmap of the testing 
+process. Yang et al \cite{9617598} propose a method called DivClass which aims to define the optimal prioritization of test reports inspection in Crowdsource Testing. This testing type 
+is covered in a next section of this chapter, so we will not further explain it here. The proposed method initially performs numerous natural language processing tasks to transform the 
+test report dataset it accepts as input. Then, the similarity of those test reports is calculated and finally, based on that, the inspection priority of each one is determined. This is a 
+short description of the overall method. We perform detailed reference to the different NLP techniques in Section 4.6. This approach can benefit the Software Testing process since it can 
+reduce the time spent on the inspection of test reports which are not that critical or that they don't contain high importance information. On the contrary, substantial amount of time 
+can be spent on inspecting test reports of higher priority. Another method which targets to make Software Testing faster is the one proposed by Tahvili et al \cite{8051381}. Their approach 
+predicts the execution time of manual test cases based on their textual specifications and also on historical data from previously executed test cases. Undoubtedly this approach has a lot 
+to offer to the software testing community since it enhances the manual test case execution process which most of the times it ends up requiring the most amount of time to be completed. Taking 
+into account that the tester now knows the approximate execution time of the test cases, it is easier for him/her to plan the overall test cycle and create the expected timetable. \\
+
+The testing stage which gathers the majority of the attention in the scinetific literature is the implementation/development stage. That is when the test cases are created and the whole testing 
+project comes to life. At this point, it is worth mentioning that almost the 70\% of the papers studied refer to that stage in some way. Because of that, we have a plethora of approach types each 
+targeting a different issue. A very common task we frequently came across is the one of test case generation, usually from Requirement Documents expressed in Natural Language. Kamalakar et all 
+\cite{kamalakar2013automatically}, for example, created a tool called Kirby which generates test case code from textual Requirement Specifications. Code pieces of the System Under Test 
+can be also used in order for the tool to better understand the structure and semantics. However, the framework proposed by Lafi et al \cite{9491761} in order to perform the same task is different. 
+This approach uses the Use Case Description of the Use Case Diagram expressed in UML. It is obvious that there is a variety of alternatives that achieve the same goals, which is the test case generation. 
+Though this is not the only one we identified at the implementation stage. Viggiato et al \cite{viggiato2022using} propose a framework which aims at improving manual test case descriptions. More specifically, 
+this approach accepts the test cases expressed in natural language and generates recommendations for the improvement of those descriptions. The framework recommends test case terminology improvements, 
+identifies possible missing steps from those test case and it is also capable of finding potential test cases that already exist in the test code and which are similar to the one provided as input. This 
+is a very powerfull approach which makes the test case implementation a piece of cake. Developing test cases based on clear, complete and comprehensive descriptions eliminates the possibility of 
+mistakes and makes the whole process much faster. \\
+
+Some of the papers we studied aim to also enhance the stage of test case execution. Pedemonte et al \cite{pedemonte2012towards} created a tool which converts manual test cases into automated ones. 
+In their analysis, they emphasize on the importance of the automatic test case execution and that is why they pursuited the implementation of that task. Their approach has the ability of accepting user 
+guidance if necessary, but 70\% of the test cases on which they evaluated the tool converted automatically to automated test steps without user guidance. Consequently, we see that the execution stage is also 
+considered a significant one for the sucessfull completion of the Software Testing process. \\
+
+After analyzing the testing stages on which the studied papers refer to, we should make a short reference to a less popular issue of the testing world which is that of test report manipulation. Some of the studies 
+we encountered, develop approaches that aim to transform test code and outcomes into a more human-friendly format. Hao et al \cite{8811987} created a tool which not only identifies duplicate reports, but it also 
+summarizes their content into a more comprehensive report. This process also happens on bug reports. On the other hand, Gonzalez et al \cite{10.1145/3283812.3283819} implemented a tool which performs a process 
+opposite to what we have encountered so far in this review. The created tool converts JUnit Assertions into text written in English. Goal of this approach is to contribute to the maintenability, understandability 
+and analysis of test code by reducing the existence of complex and difficult to explain code.
