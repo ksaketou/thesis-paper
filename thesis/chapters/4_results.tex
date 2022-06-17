@@ -103,3 +103,47 @@ we encountered, develop approaches that aim to transform test code and outcomes 
 summarizes their content into a more comprehensive report. This process also happens on bug reports. On the other hand, Gonzalez et al \cite{10.1145/3283812.3283819} implemented a tool which performs a process 
 opposite to what we have encountered so far in this review. The created tool converts JUnit Assertions into text written in English. Goal of this approach is to contribute to the maintenability, understandability 
 and analysis of test code by reducing the existence of complex and difficult to explain code.
+
+\section {Software Testing Type}
+In this section of our analysis, we focus on the test type that each approach refers to. The first kind of categorization we will perform is based on the two wide groups of manual and automated tests. 
+Those two testing approaches are widely used in software testing with each one of them serving a different purpose. Manual Testing is a well-established technique where the tester interacts with the 
+application in order to validate and ensure it functions as expected and according to requirements. He performs the steps described in the test cases by manually executing them. However, this is an 
+extremely expensive process and requires a big amount of resources with time and money being some of them. This gap fills the use of Automated Testing, where important stages like test generation and execution 
+are performed automatically. This process significantly decreases the amount of time needed to test the product and that is the reason why Automated Testing is widely used in Agile development where 
+software releases are continuous and more frequent.\\
+
+We will firstly refer to the papers that contribute to the manual testing domain. A significant fact we notice from studying the approaches is that they refer to different phases of testing. With manual 
+testing alone being a category of major importance, it is somehow reasonable for it to concern a big part of the software testing community. The Toucan4Test tool proposed by Zhang et al \cite{zhang2014systematic} facilitates 
+the process of test cases forming and creation from requirements in natural language. More specifically, this approach automatically generates the test cases from specification documents in order for them to be manually 
+executed from the testers. This entails that the above process outputs test cases in a comprehensive format which the executor can easily understand and that he can follow the test steps without any trouble. On 
+the other hand, Tahvili et al \cite{8051381} focus on manual test planning. Since we also referred to this approach in a previous section of this chapter, here we will shortly recall the context of the proposed method. 
+The authors proposed a technique which predicts the execution time of manual test cases. Such an ability is crucial for the optimized manual test execution since this is a very time consuming process. Thus, 
+an effective scheduling of the test cases that are to be executed is more than important.\\
+
+Although manual tests are a widely used testing method, automated testing has significantly grown the past few years and it continues to develop. This is also obvious from the fact that 25 out of all the papers studied 
+in this review refer to this testing method. Consequently, these approaches correspond to various contribution types and testing stages. They refer to the automatic creation, forming and execution of test cases from 
+different sources like requirement documents or use case diagrams. At this point, we should note that the majority of those techniques are applied during the implementation stage. One such example is the Litmus tool 
+created by Dwarakanath et al \cite{litmus} which generates test cases from requirement documents without imposing any restrictions to the input language format or syntax. The tool follows a five step process. After it 
+verifies that a sentence of the document is testable, the processing and generation procedure of the test case begins. A similar tool was developed by Rane et al \cite{rane2017automatic}. However, in that case the 
+authors focused on optimizing the software testing process during Agile software development.\\
+
+Apart from the above two big groups of manual and automated tests, we identified several other more specific testing types according to which we can further characterize some of the studied approaches. Those types are 
+acceptance, integration and crowdsourced tests. The goal of acceptance tests is to determine whether the application meets functionality and usability criteria \cite{artoftesting}. These tests are performed by the 
+end users of the application. An example of such approach we identified in the papers is the one proposed by Wang et al \cite{wang2020automatic} which targets the automatic generation of acceptance test cases and also, 
+their automatic execution. Thus, the manual effort required is significantly reduced. Moving on to the Integration Testing type, it aims to verify that all the system modules and units communicate correctly 
+to perform the functionality required \cite{leung1990study}. This testing type is performed after Unit Testing which, on the other hand, tests each module of the application separately. The technique proposed by Rajaraman et 
+al \cite{9197868} targets Integration Testing. More specifically, goal of the approach is to identify interconnections and dependencies between different components of an application in order to optimize Integration Testing. 
+The dependencies are determined based on the frequency of use and the importance of each component. Such characteristics exist in the application log files which are also the input of the proposed approach of 
+the specific paper.\\
+
+The third testing type we will talk about in this section is Crowdsourced Testing. Crowdsourced Testing has been growing in popularity during the last few years with many platforms having already 
+been developed to serve that purpose, such as CrowdSprint\footnote{https://crowdsprint.com/crowdsourced-testing/} and TestBirds\footnote{https://www.testbirds.com/services/quality-assurance/}. 
+In Crowdsourced Testing, test tasks are available online for anyone who is willing to perform them and test various software products. When the test task is completed, a test report is submitted 
+describing the software's behavior \cite{cui2017should}. A paper that focuses on this testing type is one we have previously encountered in this chapter written by Yang et al \cite{9617598}. The authors 
+propose a method called DivClass which prioritizes the test reports coming from Crowdsource testers. Also, similar reports are identified and combined into a signle report for more effective management 
+of time during test report inspection.\\
+
+Having expanded on the Software Testing Type characteristic of this review, we notice an overall tendency of the scientific community mainly towards Automation Testing approaches and methods to further 
+evolve this practice, which is currently gaining a lot of attention. The next major field of interest is Manual Testing, an older and well-established method which continues to being a part of the Software 
+Testing process. Lastly, we came up to a number of papers which emphasized on a more specific testing type without making distinctions regarding the above categories of Automated and Manual tests. Such test 
+types are Integration, Acceptance and Crowdsourced Testing. However, the approaches proposed there can be utilized during both automated and manual testing.
