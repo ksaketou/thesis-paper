@@ -147,3 +147,37 @@ Having expanded on the Software Testing Type characteristic of this review, we n
 evolve this practice, which is currently gaining a lot of attention. The next major field of interest is Manual Testing, an older and well-established method which continues to being a part of the Software 
 Testing process. Lastly, we came up to a number of papers which emphasized on a more specific testing type without making distinctions regarding the above categories of Automated and Manual tests. Such test 
 types are Integration, Acceptance and Crowdsourced Testing. However, the approaches proposed there can be utilized during both automated and manual testing.
+
+\section{Input Type}
+The input type of the studied approaches is another significant criteria based on which we will characterize them. During our analysis, we notice 
+that the nature of the input that each method accepts varies from being some sort of test case code, requirement and use case documents. However, the 
+majority of the inputs represent information written in natural language.\\
+
+We will start by referring to the approaches that need test case code in order to perform the functionallity required. The tool proposed by Gonzalez et al \cite{10.1145/3283812.3283819} accepts 
+as input the test code of the system under test and in particular the part of it which contains the assertions performed to check different parts of the testing 
+process. After the JUnit assertions have been provided to the tool, then a summary of the code is generated. More specifically, the assertion code 
+is translated into natural language statements in English. That way, the test case code obtains a comprehensive format and the maintenance 
+of the test cases becomes way easier and faster. Another approach which has test case code as one of its accepted inputs is the one proposed by 
+Kamalakar et al \cite{kamalakar2013automatically} which we have previously referenced again in this chapter. The goal of the approach is the generation 
+of test cases from the textual descriptions of the software's functionallity. However, code pieces of the software under test can be also provided as input 
+to the approach in order for the tool to better understand the behavior and expected functions of the application that is being tested.\\
+
+A very frequent input type we came across during our analysis is that of test case descriptions written in natural language. The method proposed 
+by Kirinuki et al \cite{9609160} aims to facilitate the maintenance of the automated test scripts where the identification of web elements on 
+web pages is necessary. In a web application elements like buttons, text input fields etc. tend to change as the application develops. That 
+means that the corresponding test scripts need to constantly adapt to the new changes. However, such a process is very time consuming and 
+not effective. Thus, the authors move towards script-free testing by proposing a technique where testing is performed through executable test 
+cases in natural language with no need to create test scripts. Arruda et al \cite{arruda2020automation} on the other hand, developed a strategy 
+for test script generation which accepts as input the textual test case descriptions. This strategy generates reusable code and is also able 
+to adapt and integrate with other test generation frameworks for even better results.\\
+
+The use cases and user stories of the system under test is another common input type referenced into the papers studied. That information can be provided through different forms like diagrams or 
+textual documents. However, we noticed that textual descriptions outweigh the rest of the accepted input formats. The method proposed by Nogueira et al \cite{nogueira2015automatic} is one of the many which 
+aim at the automatic test case generation. However, its accepted input type is the application's use cases written in a Controlled Natural Language (CNL) proposed by the authors. As stated in the paper, CNL 
+is a subset of English that can be processed and translated into a formal language with possibly a different format \cite{nogueira2015automatic}. On the other hand, the approach of Mulla et al \cite{mulla2020potent} 
+incorporates the user stories into software testing by specifically focusing on Agile practices. This approach exposes the importance of user story artifacts in the whole Software Testing Lifecycle by 
+offering, at the same time, reusability of code, increased test case generation speed and reliability.\\
+
+After the analysis of the different input types of the suggested approaches, we cannot question their variety and diversity. However, there is no doubt that most of them share a common characteristic. The input 
+information is usually expressed in natural language in order for the corresponding method or tool to perform the task required. Since the papers we study combine Natural Language Processing Techniques with 
+Software Testing, it is more than reasonable for the proposed approaches to make good use of textual information of all sorts. This is another way through which the whole contribution of the NLP knowledge area is evident.
