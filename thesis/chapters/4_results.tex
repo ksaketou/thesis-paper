@@ -144,7 +144,7 @@ propose a method called DivClass which prioritizes the test reports coming from 
 of time during test report inspection.\\
 
 Having expanded on the Software Testing Type characteristic of this review, we notice an overall tendency of the scientific community mainly towards Automation Testing approaches and methods to further 
-evolve this practice, which is currently gaining a lot of attention. The next major field of interest is Manual Testing, an older and well-established method which continues to being a part of the Software 
+evolve this practice, which is currently gaining a lot of attention. The next major field of interest is Manual Testing, an older and well established method which continues to being a part of the Software 
 Testing process. Lastly, we came up to a number of papers which emphasized on a more specific testing type without making distinctions regarding the above categories of Automated and Manual tests. Such test 
 types are Integration, Acceptance and Crowdsourced Testing. However, the approaches proposed there can be utilized during both automated and manual testing.
 
@@ -181,3 +181,34 @@ offering, at the same time, reusability of code, increased test case generation 
 After the analysis of the different input types of the suggested approaches, we cannot question their variety and diversity. However, there is no doubt that most of them share a common characteristic. The input 
 information is usually expressed in natural language in order for the corresponding method or tool to perform the task required. Since the papers we study combine Natural Language Processing Techniques with 
 Software Testing, it is more than reasonable for the proposed approaches to make good use of textual information of all sorts. This is another way through which the whole contribution of the NLP knowledge area is evident.
+
+\section{Output Type}
+We are now moving on to the output type characteristic based on which we will continue our analysis. The different output types distinguished seem to serve multiple purposes. Several approaches generate 
+results ready to be used and to enhance the testing process, whereas others create information which can then act as input into another tool, framework or process. Test reports is another frequently encountered type 
+which sometimes is also seen to incorporate bug reporting information.\\
+
+The first output type we will refer to is any form of generated code. The corresponding papers of this output type implement automatic test case generation from different input information and as a result, 
+they generate executable test case code. The approach of Mueller et al \cite{inproceedings} does exactly that based on the textual requirements of the application's behavior. This is achieved by firstly 
+transforming abstract textual information into a more normalized format (Textual Normal Form --- TNF) and then, the authors make good use of the UML diagram representation where the initial information 
+is transferred. The UML diagram is translated into classification trees which finally, generate the output code. At this point, we should note that the generated result uses the SystemVerilog language 
+to represent the corresponding outcome. According to Bergeron et al \cite{bergeron2006verification}, ``\emph{SystemVerilog is the first truly industry-standard language to cover design, assertions, 
+transaction-level modeling and coverage-driven constrained random verification.}'', meaning that SystemVerilog provides a huge flexibility and support when it comes to working in areas like high-level data types, 
+object oriented programming, assertions and others. That way, integration does not act as a barrier when it comes to moving and exchanging knowledge and information related to different areas each.\\
+
+Our analysis now continues with the papers which generate information that can be then provided as input to other processes and frameworks. The method proposed by Li et al \cite{10.1145/3368089.3417067} 
+identifies similar test steps by using clustering techniques. The generated output is the created clusters which contain the common test steps. Those clusters can be then taken into advantage in order 
+to create or even refactor API test methods. Either by acting as input to another tool or by simply being a usefull source of information to the Test Engineer, this approach achieves the development of 
+simpler and clean test code.\\
+
+Different forms of models and diagrams is another frequent output type we came across during our analysis. Some of the corresponding approaches refer to the implementation stage, but the number of methods 
+that target Test and Requirement Analysis is equally noticeable. Harmain et al \cite{harmain2000cm} developed a tool called CM-Builder which aims at facilitating the process of test analysis. This tool 
+accepts textual information regarding the corresponding software's requirements and then formally presents that information into a UML class diagram, consisting of the necessary object classes of the system. 
+This class diagram can be then provided to any Test Analyst for further improvement. Thanks to the above process, the overall analysis of the system to be tested is being both enhanced and accelerated. 
+Similar is the goal of the MaramaAIC tool developed by Kamalrudin et al \cite{kamalrudin2017maramaaic}. However, the authors focus much more on the textual requirements improvement, thus after the input 
+specification documents have been provided to the tool, the generated output is either a model or diagram containing the idenitfied recommendations. Those recommendations can be proposals to provide better consistency, 
+completeness and correctness to the requirements.\\
+
+Having concluded our analysis on the output types of the studied approaches, we see that there are two major types which stand out. Those are the executable test code and any form of model or diagram describing 
+some type of information. Approaches that generate test code usually aim at the direct implementation and execution of the test cases and have taken up the mission to accelerate the overall testing process. On the 
+other hand, papers that propose small and more detailed tools or methods and target the improvement of one specific stage or procedure, provide small but very usefull improvements to small steps of the testing process. 
+Nonetheless, both of the above directions, effectively and in their own way, enhance the testing journey.
