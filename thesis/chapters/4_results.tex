@@ -1,5 +1,4 @@
-\chapter*{Results}
-\addcontentsline{toc}{chapter}{Results}
+\chapter{Results}
 
 In this section we present the results of our Systematic Literature Review and the study of the papers identified. We separately refer to 
 each Research Question individually by commenting and making a short reference to the results found. In some sections and always depending on the RQ, we further analyze any 
@@ -40,12 +39,12 @@ could include the use of some specific method or tool. Yet again, the papers we 
 of testing. Wong et al \cite{wong2015dase} propose DASE, a path pruning strategy which aims to improve test case execution and bug detection. It can also prevent 
 defects and increase test coverage. It operates by extracting input constraints from program documentation in order to guide and form test execution paths. 
 Moreover, Tahvili et al \cite{10.1145/3195538.3195540} proposed a strategy which, given test specifications in natural language, idntifies relationships 
-between those test cases and finally, generates a series of proposed tets case scheduling strategies for execution. This is great way to effectively 
+between those test cases and finally, generates a series of proposed test case scheduling strategies for execution. This is great way to effectively 
 prioritize the test case execution process and optimize test case execution. \\
 
 After the analysis of the identified contribution types of the papers studied, we notice that the majority of scientific contributions revovle around 
 the proposal of a technique or method of performing a process. This is not something unexpected. Software Testing consists of any major processes, like 
-tets case generation, test planning, defect prevention and others, which shape all together the overall purpose of this knowledge area. Thus, the fact that 
+test case generation, test planning, defect prevention and others, which shape all together the overall purpose of this knowledge area. Thus, the fact that 
 many researchers and people interested in the field have figured out ways to enhance those methods makes a lot of sense. They have achieved 
 that by proposing new tehniques that be integrated to these processes and give out great results.
 
@@ -197,7 +196,7 @@ object oriented programming, assertions and others. That way, integration does n
 
 Our analysis now continues with the papers which generate information that can be then provided as input to other processes and frameworks. The method proposed by Li et al \cite{10.1145/3368089.3417067} 
 identifies similar test steps by using clustering techniques. The generated output is the created clusters which contain the common test steps. Those clusters can be then taken into advantage in order 
-to create or even refactor API test methods. Either by acting as input to another tool or by simply being a usefull source of information to the Test Engineer, this approach achieves the development of 
+to create or even refactor API test methods. Either by acting as input to another tool or by simply being a useful source of information to the Test Engineer, this approach achieves the development of 
 simpler and clean test code.\\
 
 Different forms of models and diagrams is another frequent output type we came across during our analysis. Some of the corresponding approaches refer to the implementation stage, but the number of methods 
@@ -210,5 +209,150 @@ completeness and correctness to the requirements.\\
 
 Having concluded our analysis on the output types of the studied approaches, we see that there are two major types which stand out. Those are the executable test code and any form of model or diagram describing 
 some type of information. Approaches that generate test code usually aim at the direct implementation and execution of the test cases and have taken up the mission to accelerate the overall testing process. On the 
-other hand, papers that propose small and more detailed tools or methods and target the improvement of one specific stage or procedure, provide small but very usefull improvements to small steps of the testing process. 
+other hand, papers that propose small and more detailed tools or methods and target the improvement of one specific stage or procedure, provide small but very useful improvements to small steps of the testing process. 
 Nonetheless, both of the above directions, effectively and in their own way, enhance the testing journey.
+
+\section{NLP Techniques}
+The field of Natural Language Processing (NLP) consists of two different components each referring to a specific task. The first one is Natural Language Understanding (NLU) and the second one is Natural Language 
+Generation (NLG) \cite{liddy2001natural, khurana2017natural}. NLU involves the study and processing of text in multiple levels and aspects (e.g. syntactical, morphological etc.), in order to map the given textual 
+information into useful representations. \\
+NLU contains several steps which actually represent different analysis types \cite{liddy2001natural}. The first kind is Lexical Analysis which has to do with the understanding of a word's structure. 
+The content of this analysis represents the Lexicon of the language which is being analyzed and contains a total of words and phrases of this language. Next we have Syntactic Analysis, during which sentences are parsed, 
+based also on grammar rules, in order to analyze the relationship between words. For example, the sentence ``I will send a friend to my letter'' will be rejected during Syntactic Analysis. Semantic Analysis is another NLP 
+step which identifies all the possible meanings of a sentence based on the interaction of each individual meaning of the words comprising it. The next type is Discourse Analysis. This kind of analysis focuses on the 
+meaning of a text which is conveyed by the interaction of the meanings of the different sentences it contains. Lastly, we have Pragmatic Analysis where sentences are re-interpreted on their real meaning like, for 
+example, the idenitification of the subject on sentence pronouns like ``him'', ``them'' etc.\\ As far as NLG is concerned, it refers to the creation of meaningful texts of different formats based on an input resource. 
+The process consists of three phases which are identifying the goal of the task, planning on how this goal can be achieved taking into consideration the available resources and finally, implementing the plan 
+created into text \cite{khurana2017natural}. The majority of the papers studied in this review perform NLU. However, very few papers performing NLG were also identified.
+
+\subsection{Natural Language Understanding --- NLU}
+We will firstly analyze the techniques used which belong to the NLU component.
+Since lexical analysis aims to understand the meaning of each word individually, Part-Of-Speech (POS) tagging is one of those techniques who widely 
+contribute to this process. POS tagging is used in the majority of the reviewed papers because it performs a very important task for the text processing 
+procedure. Goal of this technique is to assign to each word the part of speech tag to which it belongs. POS tagging distinguishes wheather a word is 
+a noun, a verb, an adverb etc. In our case, it is frequently used in user requirements analysis in order to transform them into use cases which finally 
+helps generate the required test cases \cite{allala2019towards, wang2020automatic, rane2017automatic, 8812070, preeti2017building, mulla2020potent}. 
+Moreover, we also encountered POS tagging being used in proposed methods that focus on bug reporting and ambiguity detection in user requirements. 
+Osama et al \cite{9240680}, for example, use it to assign three different types of ambiguites (semantic, syntactic and syntax) to the information identified. \\
+However, several authors moved one step further from POS tagging. Specifically, we identified two papers that adopted a slightly altered approach. 
+Pedemonte et al \cite{pedemonte2012towards} utilize BIO tagging \cite{ramshaw1999text}. BIO tagging faciliates the process of creating or identifying chunks of words or sentences in a text. 
+In contrast to POS, BIO tagging does not assign only one label to a token, but it inserts a prefix to each token's tag which declares its position 
+at a chunk. There are three possible prefixes which are B --- a tag is at the begginning of a chunk, I --- a tag is inside a chunk and O --- 
+a tag does not exist in a chunk. The authors of this paper use this tagging method during the processing of functional test steps to finally transform them into 
+automated tests. BIO tagging specifically helps them identify the test steps more accurately into the text, considering that each test step can 
+represent a single chunk of information.\\
+The second paper we found that does not use the widely known POS tagging method is the one by Carvalho et al \cite{carvalho2014nat2testscr}. The 
+authors here implemented a strategy for the generation of automated tests by incorporating into the process the Software Cost Reduction method, which 
+detects and corrects errors during the requirement analysis phase. In this approach, a customized POS tagger was created in order for all the 
+needs of the study to be satisfied. This was necessary, because the input of the approach is text written in a Controlled Natural Language (CNL) 
+created by the authors called SysReq. The creation of a CNL also requires a lexicon of that language which will contain a number of its 
+words and phrases. Thus, SysReq lexicon was also created. In general, it is very possible that one word has more than one meanings depending 
+on its way of use inside a sentence. Since we now have a new total of textual representations, POS tagger may fail to identify and deal with 
+this problem as expected. Consequently, a parser customized and adapted to SysReq-CNL was developed. This parser searches all possible 
+classifications of a word into SysReq lexicon by also taking into consideration any following words that are possibly necessary in order to 
+extract the suitable meaning each time. For example, if we want to analyze the phrase ``according to", the new parser will attempt to classify 
+both ``according'' and also ``according to'' with the correct classification to be finally onbtained from ``according to'' \cite{carvalho2014nat2testscr}.\\
+
+We are now moving on to the Syntactic level of analysis in NLP which mainly contains parsing techniques used to identify the relationships 
+between words in a text. During the parsing process, we noticed a frequent use of the Stanford CoreNLP Parser\footnote{https://stanfordnlp.github.io/CoreNLP/parser-standalone.html}. 
+This is an open source software product developed by the Stanford Natural Language Processing (NLP) Group available for everyone to use. The parser generates a phrase structure tree (PST) 
+from input sentences in different languages. A PST describes the relationships and dependencies between the words of a sentence as well as its 
+structure. This approach is used on several papers we reviewed \cite{soeken2012assisted, rane2017automatic, 9240680}. Apart from the Stanford Parser, 
+PST were also generally used in several other proposed approaches in order to achieve the same processing target as discussed above 
+\cite{harmain2000cm, mulla2020potent}.\\
+The Natural Language Took Kit (NLTK)\footnote{http://www.nltk.org/} is another open source project spotted being used during our analysis. 
+NLTK contains many libraries and tools for performing NLP tasks --- including parsing --- using the Python programming language. The approach of 
+Tahvili et al \cite{8051381} predicts the execution time of manual test cases and uses NLTK parsing to identify the activities contained in 
+a manual test. Moreover, the proposal of Preeti et al \cite{preeti2017building} includes the step of parsing UML diagrams containing use 
+case specifications into their analysis.\\
+On the other hand, Arruda et al \cite{arruda2020automation} make use of Parsing Expression Grammar (PEG) \cite{ford2004parsing} as a 
+way to deal with encountered ambiguites on the text during parsing. The authors created their own CNL syntax and rules which then incorporated 
+into the PEG parser. PEG parsing is slightly different than the above parsing methods discussed since, in that case, ambiguity problems are 
+solved based on the grammar rules and priority choices set during construction. Textual ambiguites also concern Sinha et al \cite{sinha2009linguistic} 
+who didn't develop a new CNL to their approach. Instead, they don't restrict the textual input of their method by using shallow parsing and a 
+Finite State Transducer (FST) to perform it. Shallow parsing allows us to be able to get part of the information included in the resulting parse tree. 
+However, with POS tagging we can only keep the last layer of the tree which contains just the POS tags. As far as FSTs are concerned, Finite 
+State methods have proven to be a very efficient and much faster way to perform different NLP tasks like lexical and syntactic analysis \cite{hobbs1997extracting}, 
+especially in context-free approaches.\\
+
+The next step in NLP is Semantic analysis, where the goal is to extract the actual or dictionary meaning of a word. For that task, we noticed 
+the use of WordNet in several papers\cite{soeken2012assisted, rane2017automatic, arruda2020automation}. WordNet is a lexical database and contains semantic 
+information for words in different languages available for everyone who works on NLP tasks. Sinha et al \cite{sinha2009linguistic} introduce semantic 
+information to their approach through the Dictionary Concepts Annotator they created. This component uses an extensible domain dictionary to assign 
+verbs to predefined actions/classes. For example, the verb ``CHANGE'' will be assigned to the following classes: ``UPDATE'' --- 78\%, ``OUTPUT'' 
+--- 15\% and ``INPUT'' --- 6\% \cite{sinha2009linguistic}.\\
+
+A worth mentioning method we identified being used in order to optimize both syntactic and semantic analysis tasks is the Word2Vec technique \cite{10.1145/3368089.3417067, reqclass, chen2021test}. 
+Word2Vec \cite{mikolov2013distributed}, frequently used for word embedding processing, is a total of algorithms and architectures which transform the meaning of words into vector representations. 
+That kind of representation, helps NLP tasks efficiently identify groups of similar words. The approach of Li et al \cite{10.1145/3368089.3417067} aims at clustering similar test steps in order for 
+them to be assigned to the same test method and, in that way, empowering code reuse. Word2Vec significantly contributes to this paper by vectorizing the description of test sentences. The output vectors 
+are then made use in word embeddings for the creation of the final test step clusters. However, Tahvili et al \cite{10.1145/3195538.3195540} use a variation of Word2Vec called Doc2Vec. 
+Doc2Vec \cite{mikolov2013efficient} is ideal for vectorizing whole textual documents, in contrast to Word2Vec which vectorizes individual words. The proposed approach accepts as input test specification 
+documents and clusters them in order to finally proceed to scheduling. Such a task could not be performed by Word2Vec since here we are not talking about the vectorization of small test steps but, instead, 
+we vectorize a total of textual documents.\\
+
+We will finally refer to a process identified towards the end of the NLP steps described above which is the Anaphora Resolution process. Some of the papers studied \cite{harmain2000cm, inproceedings, sinha2009linguistic} 
+include this task as part of their approach. During Anaphora Resolution, pronouns are identified in the sentence and are replaced with the noun phrases they refer to. That way, the meaning of sentences becomes more clear 
+and it is easier to spot dependences and semantic relationships between them. Gröpler et al \cite{inproceedings} apply Pronoun Resolution using the algorithm proposed by Lappin et al \cite{10.5555/203987.203989} in order 
+to identify third person pronouns in formal requirement documents. Moreover, Sinha et al \cite{sinha2009linguistic} have dedicated a whole component of their approach to Anaphora Resolution where they use a 
+specialized version of \cite{kennedy1996anaphora} to achieve the expected results.
+
+\subsubsection{Statistical Measures for NLP}
+Apart from the different techniques used in the papers, many of them also utilize different statistical metrics to measure frequency and similarity of entities like words and sentences. 
+In this section, we present the most popular metrics among the ones we identified.\\
+
+The first measure in our analysis is TF-IDF which stands for Term Frequency - Inverse Document Frequency. TF-IDF measures the importance of a word, sentence or lemma in a document compared to its importance 
+in the corresponding collection of documents or corpus \cite{infoextraction}.
+Li et al \cite{10.1145/3368089.3417067} use it for this exact purpose along with Amar et al \cite{8812113}. However, apart from the classic 
+TF-IDF approach, \cite{8812113} uses a variation of it called line-IDF. In this paper, the goal of the authors is to prevent bugs in code through historical test logs processing. Thus, they needed to also measure 
+the importance of a log line, since in this approach, rare log lines should be strong fault indicators. Consequently, line-IDF represents the importance of a log line in a test log and is defined as:
+\[ line-IDF_{l,d} = \log\frac{N}{N_l}\]
+, where N is the number of logs for a test and \(N_l\) is the total number of logs that contain the line \(l\). TF-IDF is also used by Kirinuki et al \cite{9609160} during web element processing. 
+More specifically, they use the metric to weigh words among elements in order to possibly identify and assign unique words to different web elements.\\
+
+Cosine similarity is another measure we noticed being frequently used in the proposed approaches \cite{kamalakar2013automatically, 9609160, chen2021test, 8812113}. After the vectorization of the information we 
+want to compare (e.g. words, phrases, lines of text), the authors use it as a way to identify any resemblance between the elements. It is defined as \cite{salton1988term}: 
+\[cosine\:similarity =\cos\theta=\frac{\overrightarrow {W_1} \cdot \overrightarrow {W_2}}{|W_1||W_2|} \]
+, where \(W_1\) and \(W_2\) represent the two vectorized words we are comparing.\\
+The proposed approaches of \cite{chen2021test, 8812113} make use of the above measure in order to compare words in a text or document which usually contains test case descriptions.
+Kamalakar et al \cite{kamalakar2013automatically} incorporate cosine similarity in their total of calculations they perform. They use a hybrid method in order to calculate similarity depending on each case 
+their approach comes across, with cosine similarity being used in cases of sentence matching. Kirinuki et al \cite{9609160} use a weighted mean of two cosine similarities in order to compare a target vectorized 
+string to a web element defining it like so:
+\[\frac{\alpha\times cos\_sim(v_{target} + v_{text})+ cos\_sim(v_{target}+v_{attr})}{\alpha+1}\,  ,  \alpha \geq 1\]
+, where \(v_{target}\) is the vectorized string and \(v_{text}\) and \(v_{attr}\) represent information of the web element's structure (e.g. class, area-hidden etc.).\\
+
+Moving to another statistical metric, Relaxed Word-Mover's Distance (RWMD) is used in the approach of Li et al \cite{10.1145/3368089.3417067} in order to calculate the similarity of test steps. RWMD is 
+a variation of Word-Mover's Distance (WMD) proposed in \cite{pmlr-v37-kusnerb15} which calculates the Euclidean distance between word embeddings. Small distance equals to dissimilarity, whereas big distance means 
+that the two words are more likely to be similar. RWMD can be more efficiently computed comparing to WMD, while still providing the authors with the information requested. The authors define the RWMD distance of 
+two sentences \(x\) and \(x'\) as:
+\[ RWMD(x, x')=\max(\:l_1(x,x'), l_2(x,x')\:)\,   ,  where\]
+\[ l_1(x, x')=\sum_{i,j=1}^{n}t_{i,j}|v_i-v_j|_2\, \:\:\:  ,    s.t.\:\:t_{i,j}=\begin{cases}
+                                                                x_i, & j = argmin_j|v_i-v_j|_2\\
+                                                                0,    &   otherwise \end{cases} \]
+\[ l_2(x, x')=\sum_{i,j=1}^{n}t'_{i,j}|v_i-v_j|_2\, \:\:\:  ,    s.t.\:\:t'_{i,j}=\begin{cases}
+                                                                x'_j, & j = argmin_j|v_i-v_j|_2\\
+                                                                0,    &   otherwise \end{cases} \]
+At the above formulas, we consider as \(x_i\) the normalized frequency of the word \(w_i\) in the text, whereas the vector \(v_i\) is the word embedding of \(w_i\).\\
+
+\subsection{Natural Language Generation --- NLG}
+Having completed our analysis on the NLU techniques used in the studied papers, in this section we will refer to the NLG techniques identified. Specifically, we found two papers which make use of 
+text generation methods and, thus, have natural language outputs. Gonzalez et al \cite{10.1145/3283812.3283819} created a code summarization tool which specifically translates JUnit assertions to English text. 
+That way, the maintainability, understandability and overall analysis of software and tests is being highly improved. To achieve that, the authors used the SimpleNLG engine. SimpleNLG was introduced by Gatt et al 
+\cite{gatt2009simplenlg} in order to support large-scale data-to-text NLG systems that perform summarization of numerical and symbolic data. It is a Java library which performs lexical, syntactic and 
+morphological analysis on given input and it, also, provides a variety of lexical (e.g. AdverbPosition, VerbType etc.) and phrasal (e.g. Tense, InterrogationType etc.) features.\\
+
+The second paper performing NLG is the one by Watson et al \cite{9283916} who proposed ATLAS (AuTomatic Learning of Assert Statements). ATLAS was created to predict a meaningful assert statement which can be 
+used to asses the correctness of a focal method given also a test method. The ATLAS workflow consists of several steps. First of all, we have the extraction of test methods from different Java projects available 
+on Github. Those methods proceed, then, to data mining tasks gathering the ones containing the ``@Test'' annotation as well as all the other declared methods of the projects. Then, during the data filtering 
+stage, the methods found are separated to test and focal ones and, after the context of each focal method has been identified, ATLAS generates pairs of those test and focal methods. The relevant assert statements 
+are generated as well. In order for ATLAS to learn how to successfully generate those assert statements, its uses a Recurrent Neural Network (RNN) encoder-decoder model to automate this process. RNNs are 
+being frequently used in NLG tasks since it is a great way to transfer information and they can also effectively identify patterns in data.\\
+
+In our case, the Encoder is a single layer bi-directional RNN which consists of two distinct LSTM RNNs and takes as input the tokenized test method and the context of the focal method as a stream of tokens. 
+Here, the authors made use of bi-directionality in the network in order for the encoder to take into consideration both the tokens that come before and the tokens that come after as context for the token 
+under analysis. This practice offers more flexibility to the overall task.\\
+As far as the Decoder is concerned, it is a double layer LSTM RNN which takes as input a context vector with fixed length and transforms it into a sequence of output tokens. It uses a copy mechanism trained 
+on the raw source code of the focal and test methods which facilitates the process of determining the source where the output tokens will be copied from.\\
+
+To conclude, we see that NLG tasks can end up being pretty complex depending on the target task and the expected quality of the output. However, such tasks seem to be very popular among the NLP community 
+since these days they offer a wide spectrum of possible applications in many fields and even everyday tasks.
