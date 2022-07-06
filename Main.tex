@@ -1,4 +1,4 @@
-\documentclass[11pt]{report}
+\documentclass[11pt, notitlepage]{report}
 \usepackage[a4paper, width=170mm, top=25mm,bottom=25mm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{graphics}
@@ -25,14 +25,15 @@
 \usepackage{array}
 \usepackage{caption}
 \usepackage{titlesec}
+\usepackage{titling}
 \titleformat{\chapter}[display]
   {\normalfont\bfseries}{}{-1pt}{\Huge}
 
 \graphicspath{ {./images/} }
 
-\title{Natural Language Processing Algorithms in Software Testing: A Systematic Literature Review}
+\title{Natural Language Processing in Software Testing:\\ A Systematic Literature Review}
 
-\author{Konstantina Saketou}
+\author{\Large Konstantina Saketou}
 \date{July 2022}
 \begin{document}
   \begin{titlepage}
@@ -60,7 +61,6 @@
       Φωτεινή Χαρπίδη\\
     } 
     \vfill{\normalsize Ιούλιος 2022, Αθήνα}
-    %\maketitle
   \end{titlepage}
 
 \input{thesis/main}
