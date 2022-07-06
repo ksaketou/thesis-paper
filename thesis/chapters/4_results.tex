@@ -1,8 +1,24 @@
 \chapter{Results}
 
-In this section we present the results of our Systematic Literature Review and the study of the papers identified. We separately refer to 
-each Research Question individually by commenting and making a short reference to the results found. In some sections and always depending on the RQ, we further analyze any 
-techniques or practices encountered.
+After performing a thourough analysis on the gathered scientific papers, we came up with the categorization criteria presented in chapter 3. The contribution type criterion contains the categories 
+of tool, framework and algorithm. The tools represent a set of tasks performing different processes in order to achieve a target functional goal. Also, we consider as framework a technique
+that uses both different methodologies and also tools to perform the requested task. Finally, we have the algorithm type which is simply the proposal of an algorithm. The reviewed papers have been 
+mapped to those types and are presented in more detail in the following sections. \\
+
+The next criterion is the Software Testing Stage. We identified papers which refered to a varitey of phases such as Requirement Analysis, Test Planning, Implementation and also 
+Reporting. As we can see, we have found applications concerning a big part of the overall Testing lifecycle. As far as the Testing Type, we have made two kind of categorizations here. 
+The first one is Manual and Automated testing, since they are both two popular test types of major significance. We next categorized the approaches based on Integration, Acceptance and Crowdsourced testing. 
+However, we also encountered many papers that do not set any limilation to the applicable testing type and, thus, provide more flexibility to that part. Another criterion we indentified is the input type of 
+the proposed approach. Some of the most frequent types we found is that of NL test case descriptions, use case specification documents and also test case code. We further analyze these types at the 
+corresponding section. As expected, we also refer to the output type as another criterion with the most common ones being the executable code, different tyes of models or diagrams (e.g. Use case/UML diagrams) and 
+others. An interesting part of this criterion that we further analyze is that several approaches generate outputs which can then be provided as input to other tools or processes in general. Last but not least, we 
+have the NLP Techniques criterion where we analyze in detail the identified NLP methods used on the papers. We study that section by separating it into two categories which are techniques refering to Natural 
+Language Understanding and techniques refering to Natural Language Generation. The Natural Lnaguage Understanding component also contains a small section where we present different statistical NLP measures which 
+are also used in the reviewed studies.\\
+
+In this chapter, we present the results of our Systematic Literature Review and the study of the papers identified. We separately refer to 
+each criterion individually by commenting and making a short reference to the results found. In some sections and always depending on the criterion, we further analyze any 
+techniques or practices encountered. 
 
 \section {Contribution Type}
 After reviewing all of the papers, we ended up with several contribution types proposed in their context. At this point, we should note that some papers 
@@ -216,7 +232,74 @@ completeness and correctness to the requirements.\\
 Having concluded our analysis on the output types of the studied approaches, we see that there are two major types which stand out. Those are the executable test code and any form of model or diagram describing 
 some type of information. Approaches that generate test code usually aim at the direct implementation and execution of the test cases and have taken up the mission to accelerate the overall testing process. On the 
 other hand, papers that propose small and more detailed tools or methods and target the improvement of one specific stage or procedure, provide small but very useful improvements to small steps of the testing process. 
-Nonetheless, both of the above directions, effectively and in their own way, enhance the testing journey.
+Nonetheless, both of the above directions, effectively and in their own way, enhance the testing journey. A more detailed overview about the studied papers and their matching to 
+the above criteria is shown in \hyperref[table2]{Table 2} below.
+
+\begin{longtable}{|p{3cm}|p{1cm}|p{2.5cm}|p{2.8cm}|p{2.5cm}|p{2.5cm}|}
+    \caption*{Table 2. List of the studies reviewed by Contribution Type and Software Testing Stage}
+    \label{table2}\\
+        \hline
+        Title & Ref. & Contribution Type & Software Testing Stage & Input & Output\\
+        \hline
+        A systematic approach to automatically derive test cases from use cases specified in restricted natural languages   & \cite{zhang2014systematic}&  67 & Requirement Analysis & NL Test Case Descriptions &
+        Test Case Specifications in RTCM format \\
+            \hline DASE: Document-Assisted Symbolic Execution for Improving Automated Software Testing & \cite{wong2015dase} & --& Requirement Analysis & Code Comments and Manual Pages & Detected bugs, Code Coverage results\\
+            \hline Extracting and Classifying Requirements from Software Engineering Contracts  & \cite{reqclass} & aaa & Requirement Analysis & Software Engineering Contracts & Architectural Requirements\\
+            \hline Determining Software Inter-Dependency Patterns for Integration Testing by applying Machine learning on Logs and Telemetry data
+            & \cite{9197868} &  24 & Requirement Analysis & Log Files & Identified Dependences\\
+            \hline Processing Natural Language Requirements & \cite{ambriola1997processing} & --& Requirement Analysis & Requirement Document & a Web-based environment aiding in NL requirements gathering  \\
+            \hline Rapid Quality Assurance with Requirements Smells   & \cite{femmer2017rapid} & --& Requirement Analysis & Requirement Document & Identified Requirement Smells\\
+            \hline CM-Builder: An Automated NL-based CASE Tool  & \cite{harmain2000cm} & --& Requirement Analysis & Requirement Document & UML Diagram in a semantic network\\
+            \hline MaramaAIC: tool support for consistency management and validation of requirements  & \cite{kamalrudin2017maramaaic} & --& Requirement Analysis & Textual Requirement Specifications &
+            Corrected use case model/diagram\\
+            \hline Detecting System Use Cases and Validations from Documents & \cite{6693114} & --& Requirement Analysis & Requirement Document & Detected use cases and rules\\
+            \hline Score-Based Automatic Detection and Resolution of Syntactic Ambiguity in Natural Language Requirements & \cite{9240680} & --& Requirement Analysis & Requirement Documents &
+            Possible word interpretations and proposal for ambiguity resolving\\
+            \hline Crowdsourced Test Report Prioritization Based on Text Classification  & \cite{9617598} & --& Test Planning & Test Report Dataset & Test Reports in recommended order\\
+            \hline Towards Execution Time Prediction for Manual Test Cases from Test Specification  & \cite{8051381} & --& Test Planning & NL Test Case Descriptions & Predicted Execution Time\\
+            \hline Automatically Generating Tests from Natural Language Descriptions of Software Behavior  & \cite{kamalakar2013automatically} & --& Implementation & NL Test Scenario Descriptions, 
+            Code pieces of developed software & Test Case Code\\
+            \hline Towards Transforming User Requirements to Test Cases Using MDE and NLP & \cite{allala2019towards} & --& Implementation &User Requirements container (URCon) & Container with 
+            annotated user requirements (AnnURCon) \\
+            \hline Litmus: Generation of Test Cases from Functional Requirements in Natural Language  & \cite{litmus} & --& Implementation & Requirements Document & Test Case Code\\
+            \hline Automation and consistency analysis of test cases written in natural language: An industrial context & \cite{arruda2020automation} & --& Implementation & NL Test Case Descriptions& Test Case Code\\
+            \hline NAT2TESTSCR: Test case generation from natural language requirements based on SCR specifications  & \cite{carvalho2014nat2testscr} & --& Implementation & Requirements written in SysReq CNL& Software 
+            Cost Reduction Specifications Document\\
+            \hline Towards Automatic Functional Test Execution & \cite{pedemonte2012towards} & --& Test Execution & NL Test Case Descriptions & Adjusted Automated Test and Report\\
+            \hline Abstract Flow Learning for Web Application Test Generation  & \cite{10.1145/3278186.3278194} & --& Implementation & NL Test Case Descriptions &ML-based trainable test flow generation system \\
+            \hline A Natural Language Programming Approach for Requirements-based Security Testing & \cite{mai2018natural} & --& Implementation & NL Test Case Descriptions & Executable Security Test Cases\\
+            \hline Automatic Generation of Acceptance Test Cases from Use Case Specifications: an NLP-based Approach & \cite{wang2020automatic} & --& Implementation & User Story, Test Scenario Descriptions &
+             Test Case Code\\
+            \hline Automatic Generation of Test Cases for Agile using Natural Language Processing & \cite{rane2017automatic} & --& Implementation & NL Test Case Description & Test Case Code\\
+            \hline Cluster-Based Test Scheduling Strategies Using Semantic Relationships between Test Specifications & \cite{10.1145/3195538.3195540} & --& Implementation & Test Specifications&
+            Test Case Clusters ready for scheduling\\
+            \hline Clustering Test Steps in Natural Language toward Automating Test Automation & \cite{10.1145/3368089.3417067} & --& Implementation & NL Test Case Descriptions & Test Case Clusters\\
+            \hline Generation of Executable Testbenches from Natural Language Requirement Specifications for Embedded Real-Time Systems & \cite{mueller2010generation} & --& Implementation & Textual 
+            Requirement Specifications & SystemVerilog Code\\
+            \hline Automated Test Cases Generation From Requirements Specification  & \cite{9491761} & --& Implementation & Use Case Description model & Test Paths, NLP table\\
+            \hline Constructing Test Cases Using Natural Language Processing  & \cite{7972390} & --& Implementation & Functional Requirement Document & Test Case Table\\
+            \hline NLP-assisted Web Element Identification Toward Script-free Testing & \cite{9609160} & --& Implementation & NL Test Case Descriptions & Test Procedure in NL\\
+            \hline NLP-Based Requirements Formalization for Automatic Test Case Generation & \cite{inproceedings} & --& Implementation & Functional Requirements&  Requirements Model\\
+            \hline Syntactic Rules of Extracting Test Cases from Software Requirements  & \cite{masuda2016syntactic} & --& Implementation & Functional Requirements & Syntactic Rules for Test Case Generation\\
+            \hline Test Case Reuse based on ESIM Model  & \cite{chen2021test} & --& Implementation & New Test Case & Test Cases Similarity\\
+            \hline A Linguistic Analysis Engine for Natural Language Use Case Description and Its Application to Dependability Analysis in Industrial Use Cases
+              & \cite{sinha2009linguistic} & --& Implementation & Use Case Descriptions & Use Case Description Model\\
+            \hline Using Natural Language Processing Techniques to Improve Manual Test Case Descriptions & \cite{viggiato2022using} & --& Implementation & NL Test Case Descriptions & 
+            Test Case Improvement Recommendations\\
+            \hline A Natural Language Processing (NLP) Framework for Embedded Systems to Automatically Extract Verification Aspects from Textual Design Requirements
+            & \cite{anwar2020natural} & --& Implementation & Textual Design Requirements & Verification Assertions\\
+            \hline Automatically Generating Precise Oracles from Structured Natural Language Specifications & \cite{8812070} & --& Implementation & Test Case Specifications Document & Test Case Code\\
+            \hline On Learning Meaningful Assert Statements for Unit Test Cases & \cite{9283916} & --& Implementation & Test and Focal method context & Assert statements\\
+            \hline Building Combinatorial Test Input Model from Use Case Artefacts & \cite{preeti2017building} & --& Implementation & Use Case Specifications & Test Case Model\\
+            \hline Automatic generation of test cases and test purposes from natural language & \cite{nogueira2015automatic} & --& Implementation \& Test Execution & CNL Use Cases &Test Case Code\\
+            \hline A Fine-Grained Approach for Automated Conversion of Junit Assertions to English  & \cite{10.1145/3283812.3283819} & --& Reporting & Test Case Code Assertions & English text  \\
+            \hline CTRAS: Crowdsourced Test Report Aggregation and Summarization  & \cite{8811987} & --& Reporting & Test Report & Textual information and/or screenshots of duplicate tests \\
+            \hline Towards the identification of bug entities and relations in bug reports & \cite{li2022towards} & --& Reporting & Bug Reports & Relations between bug entities\\
+            \hline Mining Historical Test Logs to Predict Bugs and Localize Faults in the Test Logs & \cite{8812113} & --& Test Planning & Test Logs & Identified Faults\\
+            \hline The Potent Combo of Software Testing and NLP & \cite{mulla2020potent} & --& Requirement Analysis& User Stories, Test Scenario Description & Test Case Code\\
+            \hline Assisted Behavior Driven Development Using Natural Language Processing & \cite{soeken2012assisted} & --& Implementation & Test Case Code, NL Test Case Descriptions & UML claas/sequence diagram\\
+        \hline
+\end{longtable}
 
 \section{NLP Techniques}
 The field of Natural Language Processing (NLP) consists of two different components each referring to a specific task. The first one is Natural Language Understanding (NLU) and the second one is Natural Language 
@@ -362,4 +445,61 @@ As far as the Decoder is concerned, it is a double layer LSTM RNN which takes as
 on the raw source code of the focal and test methods which facilitates the process of determining the source where the output tokens will be copied from.\\
 
 To conclude, we see that NLG tasks can end up being pretty complex depending on the target task and the expected quality of the output. However, such tasks seem to be very popular among the NLP community 
-since these days they offer a wide spectrum of possible applications in many fields and even everyday tasks.
+since these days they offer a wide spectrum of possible applications in many fields and even everyday tasks. Once again, a more detailed mapping of the studied approaches is presented 
+in \hyperref[table3]{Table 3} below.
+
+\begin{longtable}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+    \caption*{ Table 3. List of the studies reviewed by NLP Techniques}
+    \label{table3}\\
+        \hline
+        Title & Reference & NLP Techniques & NLP Tools \\
+            \hline DASE: Document-Assisted Symbolic Execution for Improving Automated Software Testing & \cite{wong2015dase} &  & Stanford CoreNLP Typed dependency \\
+            \hline Extracting and Classifying Requirements from Software Engineering Contracts  & \cite{reqclass} &  & Word2Vec\\
+            \hline Determining Software Inter-Dependency Patterns for Integration Testing by applying Machine learning on Logs and Telemetry data
+            & \cite{9197868} & Lemmatization, Tokenization, Parsing & \\
+            \hline Processing Natural Language Requirements & \cite{ambriola1997processing} & Word Tagging, Fuzzy Matching & \\
+            \hline Rapid Quality Assurance with Requirements Smells   & \cite{femmer2017rapid} & POS Tagging & \\
+            \hline CM-Builder: An Automated NL-based CASE Tool  & \cite{harmain2000cm} & Anaphora Resolution & Stanford CoreNLP Parser\\
+            \hline MaramaAIC: tool support for consistency management and validation of requirements  & \cite{kamalrudin2017maramaaic} & POS Tagging & \\
+            \hline Detecting System Use Cases and Validations from Documents & \cite{6693114} & POS Tagging, Tokenization & \\
+            \hline Score-Based Automatic Detection and Resolution of Syntactic Ambiguity in Natural Language Requirements & \cite{9240680} & POS Tagging & Stanford CoreNLP Parser\\
+            \hline Crowdsourced Test Report Prioritization Based on Text Classification  & \cite{9617598} & Bag-of-Words Model, Synonymy Replacement & Language Technology Platform\\
+            \hline Towards Execution Time Prediction for Manual Test Cases from Test Specification  & \cite{8051381} &   & Python NLTK\\
+            \hline Automatically Generating Tests from Natural Language Descriptions of Software Behavior  & \cite{kamalakar2013automatically} & Cosine Similarity & \\
+            \hline Towards Transforming User Requirements to Test Cases Using MDE and NLP & \cite{allala2019towards} &  POS Tagging & \\
+            \hline Litmus: Generation of Test Cases from Functional Requirements in Natural Language  & \cite{litmus} &  & LinkGrammar Parser\\
+            \hline Automation and consistency analysis of test cases written in natural language: An industrial context & \cite{arruda2020automation} &   & Parsing Expression Grammar (PEG), WordNet\\
+            \hline NAT2TESTSCR: Test case generation from natural language requirements based on SCR specifications  & \cite{carvalho2014nat2testscr} &  Customized POS Tagger (using Software Cost Reduction method) & \\
+            \hline Towards Automatic Functional Test Execution & \cite{pedemonte2012towards} & BIO Tagging & \\
+            \hline Abstract Flow Learning for Web Application Test Generation  & \cite{10.1145/3278186.3278194} & LSTM RNNs & \\
+            \hline A Natural Language Programming Approach for Requirements-based Security Testing & \cite{mai2018natural} & Tokenization & \\
+            \hline Automatic Generation of Acceptance Test Cases from Use Case Specifications: an NLP-based Approach & \cite{wang2020automatic} &  POS Tagging & \\
+            \hline Automatic Generation of Test Cases for Agile using Natural Language Processing & \cite{rane2017automatic} & POS Tagging & Stanford CoreNLP Parser, WordNet\\
+            \hline Cluster-Based Test Scheduling Strategies Using Semantic Relationships between Test Specifications & \cite{10.1145/3195538.3195540} &   & Doc2Vec\\
+            \hline Clustering Test Steps in Natural Language toward Automating Test Automation & \cite{10.1145/3368089.3417067} & TF-IDF, Relaxed Word-Mover's Distance & Word2Vec\\
+            \hline Generation of Executable Testbenches from Natural Language Requirement Specifications for Embedded Real-Time Systems & \cite{mueller2010generation} & Lemmatization & \\
+            \hline Automated Test Cases Generation From Requirements Specification  & \cite{9491761} & Control Flow Graph, NLP Table & \\
+            \hline Constructing Test Cases Using Natural Language Processing  & \cite{7972390} &  Tokenization, Document Parsing & \\
+            \hline NLP-assisted Web Element Identification Toward Script-free Testing & \cite{9609160} & TF-IDF, Cosine Similarity & \\
+            \hline NLP-Based Requirements Formalization for Automatic Test Case Generation & \cite{inproceedings} & Anaphora Resolution & Algorithm of \cite{10.5555/203987.203989}\\
+            \hline Syntactic Rules of Extracting Test Cases from Software Requirements  & \cite{masuda2016syntactic} & POS Tagging, Cosine Similarity & Penn TreeBank\\
+            \hline Test Case Reuse based on ESIM Model  & \cite{chen2021test} & Cosine Similarity & Word2Vec\\
+            \hline A Linguistic Analysis Engine for Natural Language Use Case Description and Its Application to Dependability Analysis in Industrial Use Cases
+              & \cite{sinha2009linguistic} & Shallow Parsing, Anaphora Resolution & Finite State Transducers, Dictionary Concepts Annotator, Specialized version of \cite{kennedy1996anaphora}\\
+            \hline Using Natural Language Processing Techniques to Improve Manual Test Case Descriptions & \cite{viggiato2022using} & Tokenization, n-grams, BERT-based language models & \\
+            \hline A Natural Language Processing (NLP) Framework for Embedded Systems to Automatically Extract Verification Aspects from Textual Design Requirements
+            & \cite{anwar2020natural} & POS Tagging, Sentence Splitting & \\
+            \hline Automatically Generating Precise Oracles from Structured Natural Language Specifications & \cite{8812070} & POS Tagging & \\
+            \hline On Learning Meaningful Assert Statements for Unit Test Cases & \cite{9283916} & Data Filtering, Context Understanding, LSTM RNN Decoder/Encoder model & \\
+            \hline Building Combinatorial Test Input Model from Use Case Artefacts & \cite{preeti2017building} &  POS Tagging & Python NLTK\\
+            \hline A systematic approach to automatically derive test cases from use cases specified in restricted natural languages   & \cite{zhang2014systematic} & NL Restriction Rules & \\
+            \hline Automatic generation of test cases and test purposes from natural language & \cite{nogueira2015automatic} & Document Parsing & \\
+            \hline A Fine-Grained Approach for Automated Conversion of Junit Assertions to English  & \cite{10.1145/3283812.3283819} &   & SimpleNLG\\
+            \hline CTRAS: Crowdsourced Test Report Aggregation and Summarization  & \cite{8811987} & Tokenization, Synonym Identification, Jaccard Distance, PageRank & \\
+            \hline Towards the identification of bug entities and relations in bug reports & \cite{li2022towards} & POS Tagging, Word Embeddings & Stanford CoreNLP\\
+            \hline Mining Historical Test Logs to Predict Bugs and Localize Faults in the Test Logs & \cite{8812113} & TF-IDF, line-IDF, Cosine Similarity & \\
+            \hline The Potent Combo of Software Testing and NLP & \cite{mulla2020potent} & POS Tagging & Stanford CoreNLP Parser\\
+            \hline Assisted Behavior Driven Development Using Natural Language Processing & \cite{soeken2012assisted} &  & Stanford CoreNLP Parser, WordNet\\
+        \hline
+
+\end{longtable}
