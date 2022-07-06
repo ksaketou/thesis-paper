@@ -4,7 +4,7 @@
 \usepackage{graphics}
 \usepackage{hyperref}
 \usepackage{appendix}
-\pagestyle{empty}
+\pagestyle{plain}
 \setlength{\headheight}{12pt}
 \usepackage{polyglossia}
 \setmainlanguage{english}
@@ -21,6 +21,8 @@
 \usepackage{float}
 \floatstyle{plaintop}
 \restylefloat{table}
+\usepackage{longtable}
+\usepackage{array}
 \usepackage{caption}
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
@@ -28,18 +30,35 @@
 
 \graphicspath{ {./images/} }
 
-\title{first page of the whole paper}
+\title{Natural Language Processing Algorithms in Software Testing: A Systematic Literature Review}
 
 \author{Konstantina Saketou}
-\date{April 2022}
+\date{July 2022}
 \begin{document}
-
-\maketitle
+  \begin{titlepage}
+    \centering
+    \includegraphics[width=17cm]{images/aueb_logo.jpg}
+    \vfill
+    {\bfseries\Large
+        ΠΤΥΧΙΑΚΗ ΕΡΓΑΣΙΑ / ΤΕΛΙΚΗ ΑΝΑΦΟΡΑ ΠΡΑΚΤΙΚΗΣ ΑΣΚΗΣΗΣ\\
+        \vskip1cm
+        Κωνσταντίνα Σακέτου\\
+    }       
+      
+    
+    \vfill{\bfseries\Large  
+      ΕΠΙΒΛΕΠΩΝ ΚΑΘΗΓΗΤΗΣ:\\
+      Παναγιώτης Λουρίδας\\ 
+      \vskip1cm
+      ΕΠΙΒΛΕΠΟΥΣΑ ΕΠΙΧΕΙΡΗΣΗΣ:\\
+      Φωτεινή Χαρπίδη
+    } 
+    \vfill{\normalsize Ιούλιος 2022, Αθήνα}
+    %\maketitle
+  \end{titlepage}
 
 \input{thesis/main}
-
 \nocite{*}
-
 \bibliographystyle{unsrt}
 \bibliography{thesis/thesis_bibliography.bib}
 
