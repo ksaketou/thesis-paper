@@ -1,9 +1,10 @@
 \chapter{Results}
 
 After performing a thourough analysis on the gathered scientific papers, we came up with the categorization criteria presented in chapter 3. The contribution type criterion contains the categories 
-of tool, framework and algorithm. The tools represent a set of tasks performing different processes in order to achieve a target functional goal. Also, we consider as framework a technique
-that uses both different methodologies and also tools to perform the requested task. Finally, we have the algorithm type which is simply the proposal of an algorithm. The reviewed papers have been 
-mapped to those types and are presented in more detail in the following sections. \\
+of tool, framework, algorithm and technique. Starting from the tools, these are pieces of software containing programs that are used to support an application's or a system's functionality. 
+Moreover, we consider as framework a total of techniques and tools combined in order to perform and/or facilitate a task. Regarding the algorithm, it is simply a sequence of instructions given 
+to the computer with the aim of solving a specific problem. Finally, in the category of the techniques and approaches, we place the papers that propose a certain way of performing a task, usually 
+using already existing tools and technologies. The reviewed papers have been mapped to those types and are presented in more detail in the following sections. \\
 
 The next criterion is the Software Testing Stage. We identified papers which refered to a varitey of phases such as Requirement Analysis, Test Planning, Implementation and also 
 Reporting. As we can see, we have found applications concerning a big part of the overall Testing lifecycle. As far as the Testing Type, we have made two kind of categorizations here. 
@@ -21,24 +22,24 @@ each criterion individually by commenting and making a short reference to the re
 techniques or practices encountered. 
 
 \section {Contribution Type}
-After reviewing all of the papers, we ended up with several contribution types proposed in their context. At this point, we should note that some papers 
-proposed more than one types so some of them are included into more than one categories. \\
+After reviewing all of the papers, we ended up with several contribution types proposed in their context. Our findings include tools, frameworks, algorithms and also techniques. 
+In this section, we will refer to those categories that contain a big number of the papers we analyzed.\\
 
-The first and most encountered contribution type is that of a method technique. This type includes any proposal of approaches, processes, techniques and any 
-other alternative way of performing a certain task. We grouped them all into this category since they all somehow refer to something very similar. Specifically, 20 of the
-studied papers suggest such an approach of that type. 9 out those 20 papers (45\%) propose a way for generating test cases automatically from different input types, like 
-use case specification and funtional requirement documents. Motwani et al \cite{8812070}, for example, present Swami which is a language-agnostic test case constructor 
-based on Javascript code templates and the ECMA-262 Standard. Swami generates test case code based on the code documentation and software specifications provided. Moreover, 
-Nogueira et al \cite{nogueira2015automatic} propose an event flow for test case generation from input provided in a Control Flow Language. This flow consists of several other 
-processes (e.g. translation of use case descriptions) that contribute to the achievemennt of the overall goal of the proposal. \\
-
-Another significant contribution type we distinguished is that of a tool. 14 of the studied papers suggest some sort of tool for the ease of different software testing processes. 
+The first and most encountered contribution type is that of a tool. Almost 45,5\% of the studied papers suggest some sort of tool for the ease of different software testing processes. 
 Some of those tools are part of the overall approach, whereas others are the main focus of the study. Some of them target the test case execution process, others focus on test case 
 generation or even other areas like defects prevention and requirement analysis facilitation. Pedemonte et al \cite{pedemonte2012towards} present an approach to convert manual 
 functional tests into a state ready for automatic execution by using Machine Learning methods to process textual information. This is a semi-automatic approach since in cases 
 of textual information ambiguity, the user is prompted to interact with the tool to resolve the issue and provide the answer required to continue with the process. Another 
 considerable approach is the CTRAS tool created by Hao et al \cite{8811987} which aims at the summarization of duplicate test reports in oprder to make them easily understandable 
 by developers. The tool idenitfies similarities in both textual information and screenshots and comprehensibly presents them into a single report. \\
+
+Another significant contribution type we distinguished is that of a technique or approach. As we refered earlier, this type includes any proposal of approaches, processes, techniques and any 
+other alternative way of performing a certain task. We grouped them all into this category since they all somehow refer to something very similar. Specifically, 25\% of the
+studied papers suggest such an approach of that type. Rajaraman et al \cite{9197868} propose in their study a way of idenitfying dependecies between tests. The authors apply Machine Learning techniques 
+on log files in order to create a dependency graph which describes the connections and dependecies between the components of an application. This proposal widely facilitates the process of Integration 
+Testing. We make a more detailed reference to that testing type at the corresponding section. Another paper that belongs to the technique category is that of Li et al \cite{li2022towards}. Here they propose 
+an automated way for extracting knowledge from historical bug reports and for also identifying relations between them. This functionality contributes to test troubleshooting activities and it can also enhance 
+the reporting stage.\\
 
 Several other papers focused on developing a Framework to achieve their goal. Some of them refer to the topic of test case generation while others 
 emphasize on the earlier stage of requirement analysis and transformation. Lafi et al \cite{9491761} created a framework which consists of different other 
@@ -50,23 +51,14 @@ for the improvement of the terminology of the test cases, it can identify potent
 prevent test case duplicates since it is able to identify similar test cases with the one which is currently being analyzed. All of the above three 
 outputs contribute immensely to the proper and effective forming of test cases by making the testers' job much easier. \\
 
-The last contribution type spotted is the proposal of some sort of strategy. This might be a certain way of handling or working on a specific process which 
-could include the use of some specific method or tool. Yet again, the papers we identified serve different kinds of purposes on different stages 
-of testing. Wong et al \cite{wong2015dase} propose DASE, a path pruning strategy which aims to improve test case execution and bug detection. It can also prevent 
-defects and increase test coverage. It operates by extracting input constraints from program documentation in order to guide and form test execution paths. 
-Moreover, Tahvili et al \cite{10.1145/3195538.3195540} proposed a strategy which, given test specifications in natural language, idntifies relationships 
-between those test cases and finally, generates a series of proposed test case scheduling strategies for execution. This is great way to effectively 
-prioritize the test case execution process and optimize test case execution. \\
-
 After the analysis of the identified contribution types of the papers studied, we notice that the majority of scientific contributions revovle around 
-the proposal of a technique or method of performing a process. This is not something unexpected. Software Testing consists of any major processes, like 
-test case generation, test planning, defect prevention and others, which shape all together the overall purpose of this knowledge area. Thus, the fact that 
-many researchers and people interested in the field have figured out ways to enhance those methods makes a lot of sense. They have achieved 
-that by proposing new tehniques that be integrated to these processes and give out great results.
+the proposal of a tool in order to perform something new or to enhance a functionality. This is not something unexpected. Software Testing consists of many major processes, like 
+test case generation, test planning, defect prevention and others, which shape all together the overall purpose of this knowledge area and are in need of improvements in order to move one step 
+closer to complete automation of testing. Thus, many researchers and people interested in the field have figured out ways to enhance those methods by achieving great results.
 
 \section {Software Testing Stage}
-Another aspect of the papers we studied that we are intersted in is the Stage of the Software Testing Lifecycle to which they apply. Some of the approaches we found refer to 
-the Requirement Analysis phase, others to the Implementation and Development, Execution etc. The first one we will comment here is the Requirement Analysis. Almost 18\% of the studies 
+Another aspect of the papers we studied that we are interested in is the Stage of the Software Testing Lifecycle to which they apply. Some of the approaches we found refer to 
+the Requirement Analysis phase, others to the Implementation and Development, Execution etc. The first one we will comment here is the Requirement Analysis. 25\% of the studies 
 come up with a proposal regarding that stage and they target to enhance the processing of the test requirements and specifications. This procedure happens before the construction 
 of the test cases of any form and it is a critical stage which many times determines the overall outcome of the testing cycle. Thus, it is of major importance to effectivelly 
 perform the Requirement Analysis for the optimal result. \\
@@ -97,7 +89,7 @@ to offer to the software testing community since it enhances the manual test cas
 into account that the tester now knows the approximate execution time of the test cases, it is easier for him/her to plan the overall test cycle and create the expected timetable. \\
 
 The testing stage which gathers the majority of the attention in the scinetific literature is the implementation/development stage. That is when the test cases are created and the whole testing 
-project comes to life. At this point, it is worth mentioning that almost the 70\% of the papers studied refer to that stage in some way. Because of that, we have a plethora of approach types each 
+project comes to life. At this point, it is worth mentioning that almost 63\% of the papers studied refer to that stage in some way. Because of that, we have a plethora of approach types each 
 targeting a different issue. A very common task we frequently came across is the one of test case generation, usually from Requirement Documents expressed in Natural Language. Kamalakar et all 
 \cite{kamalakar2013automatically}, for example, created a tool called Kirby which generates test case code from textual Requirement Specifications. Code pieces of the System Under Test 
 can be also used in order for the tool to better understand the structure and semantics. However, the framework proposed by Lafi et al \cite{9491761} in order to perform the same task is different. 
@@ -174,13 +166,13 @@ The input type of the studied approaches is another significant criteria based o
 that the nature of the input that each method accepts varies from being some sort of test case code, requirement and use case documents. However, the 
 majority of the inputs represent information written in natural language.\\
 
-We will start by referring to the approaches that need test case code in order to perform the functionallity required. The tool proposed by Gonzalez et al \cite{10.1145/3283812.3283819} accepts 
+We will start by referring to the approaches that need test case code in order to perform the functionality required. The tool proposed by Gonzalez et al \cite{10.1145/3283812.3283819} accepts 
 as input the test code of the system under test and in particular the part of it which contains the assertions performed to check different parts of the testing 
 process. After the JUnit assertions have been provided to the tool, then a summary of the code is generated. More specifically, the assertion code 
 is translated into natural language statements in English. That way, the test case code obtains a comprehensive format and the maintenance 
 of the test cases becomes way easier and faster. Another approach which has test case code as one of its accepted inputs is the one proposed by 
 Kamalakar et al \cite{kamalakar2013automatically} which we have previously referenced again in this chapter. The goal of the approach is the generation 
-of test cases from the textual descriptions of the software's functionallity. However, code pieces of the software under test can be also provided as input 
+of test cases from the textual descriptions of the software's functionality. However, code pieces of the software under test can be also provided as input 
 to the approach in order for the tool to better understand the behavior and expected functions of the application that is being tested.\\
 
 A very frequent input type we came across during our analysis is that of test case descriptions written in natural language. The method proposed 
@@ -188,9 +180,9 @@ by Kirinuki et al \cite{9609160} aims to facilitate the maintenance of the autom
 web pages is necessary. In a web application elements like buttons, text input fields etc. tend to change as the application develops. That 
 means that the corresponding test scripts need to constantly adapt to the new changes. However, such a process is very time consuming and 
 not effective. Thus, the authors move towards script-free testing by proposing a technique where testing is performed through executable test 
-cases in natural language with no need to create test scripts. Arruda et al \cite{arruda2020automation} on the other hand, developed a strategy 
-for test script generation which accepts as input the textual test case descriptions. This strategy generates reusable code and is also able 
-to adapt and integrate with other test generation frameworks for even better results.\\
+cases in natural language with no need to create test scripts. Arruda et al \cite{arruda2020automation} on the other hand, developed a tool 
+for test script generation which accepts as input the textual test case descriptions. This tool generates reusable code and is also able 
+to adapt and integrate with different test generation frameworks for even better results.\\
 
 The use cases and user stories of the system under test is another common input type referenced into the papers studied. That information can be provided through different forms like diagrams or 
 textual documents. However, we noticed that textual descriptions outweigh the rest of the accepted input formats. The method proposed by Nogueira et al \cite{nogueira2015automatic} is one of the many which 
@@ -226,7 +218,7 @@ that target Test and Requirement Analysis is equally noticeable. Harmain et al \
 accepts textual information regarding the corresponding software's requirements and then formally presents that information into a UML class diagram, consisting of the necessary object classes of the system. 
 This class diagram can be then provided to any Test Analyst for further improvement. Thanks to the above process, the overall analysis of the system to be tested is being both enhanced and accelerated. 
 Similar is the goal of the MaramaAIC tool developed by Kamalrudin et al \cite{kamalrudin2017maramaaic}. However, the authors focus much more on the textual requirements improvement, thus after the input 
-specification documents have been provided to the tool, the generated output is either a model or diagram containing the idenitfied recommendations. Those recommendations can be proposals to provide better consistency, 
+specification documents have been provided to the tool, the generated output is either a model or diagram containing the identified recommendations. Those recommendations can be proposals to provide better consistency, 
 completeness and correctness to the requirements.\\
 
 Having concluded our analysis on the output types of the studied approaches, we see that there are two major types which stand out. Those are the executable test code and any form of model or diagram describing 
@@ -241,63 +233,63 @@ the above criteria is shown in \hyperref[table2]{Table 2} below.
         \hline
         Title & Ref. & Contribution Type & Software Testing Stage & Input & Output\\
         \hline
-        A systematic approach to automatically derive test cases from use cases specified in restricted natural languages   & \cite{zhang2014systematic}&  67 & Requirement Analysis & NL Test Case Descriptions &
+        A systematic approach to automatically derive test cases from use cases specified in restricted natural languages   & \cite{zhang2014systematic}& Tool & Requirement Analysis & NL Test Case Descriptions &
         Test Case Specifications in RTCM format \\
-            \hline DASE: Document-Assisted Symbolic Execution for Improving Automated Software Testing & \cite{wong2015dase} & --& Requirement Analysis & Code Comments and Manual Pages & Detected bugs, Code Coverage results\\
-            \hline Extracting and Classifying Requirements from Software Engineering Contracts  & \cite{reqclass} & aaa & Requirement Analysis & Software Engineering Contracts & Architectural Requirements\\
+            \hline DASE: Document-Assisted Symbolic Execution for Improving Automated Software Testing & \cite{wong2015dase} & Tool& Requirement Analysis & Code Comments and Manual Pages & Detected bugs, Code Coverage results\\
+            \hline Extracting and Classifying Requirements from Software Engineering Contracts  & \cite{reqclass} & Framework & Requirement Analysis & Software Engineering Contracts & Architectural Requirements\\
             \hline Determining Software Inter-Dependency Patterns for Integration Testing by applying Machine learning on Logs and Telemetry data
-            & \cite{9197868} &  24 & Requirement Analysis & Log Files & Identified Dependences\\
-            \hline Processing Natural Language Requirements & \cite{ambriola1997processing} & --& Requirement Analysis & Requirement Document & a Web-based environment aiding in NL requirements gathering  \\
-            \hline Rapid Quality Assurance with Requirements Smells   & \cite{femmer2017rapid} & --& Requirement Analysis & Requirement Document & Identified Requirement Smells\\
-            \hline CM-Builder: An Automated NL-based CASE Tool  & \cite{harmain2000cm} & --& Requirement Analysis & Requirement Document & UML Diagram in a semantic network\\
-            \hline MaramaAIC: tool support for consistency management and validation of requirements  & \cite{kamalrudin2017maramaaic} & --& Requirement Analysis & Textual Requirement Specifications &
+            & \cite{9197868} &  Approach/ Technique & Requirement Analysis & Log Files & Identified Dependences\\
+            \hline Processing Natural Language Requirements & \cite{ambriola1997processing} & Tools& Requirement Analysis & Requirement Document & a Web-based environment aiding in NL requirements gathering  \\
+            \hline Rapid Quality Assurance with Requirements Smells   & \cite{femmer2017rapid} & Tool& Requirement Analysis & Requirement Document & Identified Requirement Smells\\
+            \hline CM-Builder: An Automated NL-based CASE Tool  & \cite{harmain2000cm} & Tool& Requirement Analysis & Requirement Document & UML Diagram in a semantic network\\
+            \hline MaramaAIC: tool support for consistency management and validation of requirements  & \cite{kamalrudin2017maramaaic} & Tool& Requirement Analysis & Textual Requirement Specifications &
             Corrected use case model/diagram\\
-            \hline Detecting System Use Cases and Validations from Documents & \cite{6693114} & --& Requirement Analysis & Requirement Document & Detected use cases and rules\\
-            \hline Score-Based Automatic Detection and Resolution of Syntactic Ambiguity in Natural Language Requirements & \cite{9240680} & --& Requirement Analysis & Requirement Documents &
+            \hline Detecting System Use Cases and Validations from Documents & \cite{6693114} & Approach/ Technique& Requirement Analysis & Requirement Document & Detected use cases and rules\\
+            \hline Score-Based Automatic Detection and Resolution of Syntactic Ambiguity in Natural Language Requirements & \cite{9240680} & Tool& Requirement Analysis & Requirement Documents &
             Possible word interpretations and proposal for ambiguity resolving\\
-            \hline Crowdsourced Test Report Prioritization Based on Text Classification  & \cite{9617598} & --& Test Planning & Test Report Dataset & Test Reports in recommended order\\
-            \hline Towards Execution Time Prediction for Manual Test Cases from Test Specification  & \cite{8051381} & --& Test Planning & NL Test Case Descriptions & Predicted Execution Time\\
-            \hline Automatically Generating Tests from Natural Language Descriptions of Software Behavior  & \cite{kamalakar2013automatically} & --& Implementation & NL Test Scenario Descriptions, 
+            \hline Crowdsourced Test Report Prioritization Based on Text Classification  & \cite{9617598} & Approach/ Technique& Test Planning & Test Report Dataset & Test Reports in recommended order\\
+            \hline Towards Execution Time Prediction for Manual Test Cases from Test Specification  & \cite{8051381} & Approach/ Technique& Test Planning & NL Test Case Descriptions & Predicted Execution Time\\
+            \hline Automatically Generating Tests from Natural Language Descriptions of Software Behavior  & \cite{kamalakar2013automatically} & Tool& Implementation & NL Test Scenario Descriptions, 
             Code pieces of developed software & Test Case Code\\
-            \hline Towards Transforming User Requirements to Test Cases Using MDE and NLP & \cite{allala2019towards} & --& Implementation &User Requirements container (URCon) & Container with 
+            \hline Towards Transforming User Requirements to Test Cases Using MDE and NLP & \cite{allala2019towards} & Framework& Implementation &User Requirements container (URCon) & Container with 
             annotated user requirements (AnnURCon) \\
-            \hline Litmus: Generation of Test Cases from Functional Requirements in Natural Language  & \cite{litmus} & --& Implementation & Requirements Document & Test Case Code\\
-            \hline Automation and consistency analysis of test cases written in natural language: An industrial context & \cite{arruda2020automation} & --& Implementation & NL Test Case Descriptions& Test Case Code\\
-            \hline NAT2TESTSCR: Test case generation from natural language requirements based on SCR specifications  & \cite{carvalho2014nat2testscr} & --& Implementation & Requirements written in SysReq CNL& Software 
+            \hline Litmus: Generation of Test Cases from Functional Requirements in Natural Language  & \cite{litmus} & Tool& Implementation & Requirements Document & Test Case Code\\
+            \hline Automation and consistency analysis of test cases written in natural language: An industrial context & \cite{arruda2020automation} & Tool& Implementation & NL Test Case Descriptions& Test Case Code\\
+            \hline NAT2TESTSCR: Test case generation from natural language requirements based on SCR specifications  & \cite{carvalho2014nat2testscr} & Framework& Implementation & Requirements written in SysReq CNL& Software 
             Cost Reduction Specifications Document\\
-            \hline Towards Automatic Functional Test Execution & \cite{pedemonte2012towards} & --& Test Execution & NL Test Case Descriptions & Adjusted Automated Test and Report\\
-            \hline Abstract Flow Learning for Web Application Test Generation  & \cite{10.1145/3278186.3278194} & --& Implementation & NL Test Case Descriptions &ML-based trainable test flow generation system \\
-            \hline A Natural Language Programming Approach for Requirements-based Security Testing & \cite{mai2018natural} & --& Implementation & NL Test Case Descriptions & Executable Security Test Cases\\
-            \hline Automatic Generation of Acceptance Test Cases from Use Case Specifications: an NLP-based Approach & \cite{wang2020automatic} & --& Implementation & User Story, Test Scenario Descriptions &
+            \hline Towards Automatic Functional Test Execution & \cite{pedemonte2012towards} & Tool& Test Execution & NL Test Case Descriptions & Adjusted Automated Test and Report\\
+            \hline Abstract Flow Learning for Web Application Test Generation  & \cite{10.1145/3278186.3278194} & Tool& Implementation & NL Test Case Descriptions &ML-based trainable test flow generation system \\
+            \hline A Natural Language Programming Approach for Requirements-based Security Testing & \cite{mai2018natural} & Framework& Implementation & NL Test Case Descriptions & Executable Security Test Cases\\
+            \hline Automatic Generation of Acceptance Test Cases from Use Case Specifications: an NLP-based Approach & \cite{wang2020automatic} & Tool& Implementation & User Story, Test Scenario Descriptions &
              Test Case Code\\
-            \hline Automatic Generation of Test Cases for Agile using Natural Language Processing & \cite{rane2017automatic} & --& Implementation & NL Test Case Description & Test Case Code\\
-            \hline Cluster-Based Test Scheduling Strategies Using Semantic Relationships between Test Specifications & \cite{10.1145/3195538.3195540} & --& Implementation & Test Specifications&
+            \hline Automatic Generation of Test Cases for Agile using Natural Language Processing & \cite{rane2017automatic} & Tool& Implementation & NL Test Case Description & Test Case Code\\
+            \hline Cluster-Based Test Scheduling Strategies Using Semantic Relationships between Test Specifications & \cite{10.1145/3195538.3195540} & Framework& Implementation & Test Specifications&
             Test Case Clusters ready for scheduling\\
-            \hline Clustering Test Steps in Natural Language toward Automating Test Automation & \cite{10.1145/3368089.3417067} & --& Implementation & NL Test Case Descriptions & Test Case Clusters\\
-            \hline Generation of Executable Testbenches from Natural Language Requirement Specifications for Embedded Real-Time Systems & \cite{mueller2010generation} & --& Implementation & Textual 
+            \hline Clustering Test Steps in Natural Language toward Automating Test Automation & \cite{10.1145/3368089.3417067} & Framework& Implementation & NL Test Case Descriptions & Test Case Clusters\\
+            \hline Generation of Executable Testbenches from Natural Language Requirement Specifications for Embedded Real-Time Systems & \cite{mueller2010generation} & Framework& Implementation & Textual 
             Requirement Specifications & SystemVerilog Code\\
-            \hline Automated Test Cases Generation From Requirements Specification  & \cite{9491761} & --& Implementation & Use Case Description model & Test Paths, NLP table\\
-            \hline Constructing Test Cases Using Natural Language Processing  & \cite{7972390} & --& Implementation & Functional Requirement Document & Test Case Table\\
-            \hline NLP-assisted Web Element Identification Toward Script-free Testing & \cite{9609160} & --& Implementation & NL Test Case Descriptions & Test Procedure in NL\\
-            \hline NLP-Based Requirements Formalization for Automatic Test Case Generation & \cite{inproceedings} & --& Implementation & Functional Requirements&  Requirements Model\\
-            \hline Syntactic Rules of Extracting Test Cases from Software Requirements  & \cite{masuda2016syntactic} & --& Implementation & Functional Requirements & Syntactic Rules for Test Case Generation\\
-            \hline Test Case Reuse based on ESIM Model  & \cite{chen2021test} & --& Implementation & New Test Case & Test Cases Similarity\\
+            \hline Automated Test Cases Generation From Requirements Specification  & \cite{9491761} & Framework& Implementation & Use Case Description model & Test Paths, NLP table\\
+            \hline Constructing Test Cases Using Natural Language Processing  & \cite{7972390} & Tool& Implementation & Functional Requirement Document & Test Case Table\\
+            \hline NLP-assisted Web Element Identification Toward Script-free Testing & \cite{9609160} & Framework& Implementation & NL Test Case Descriptions & Test Procedure in NL\\
+            \hline NLP-Based Requirements Formalization for Automatic Test Case Generation & \cite{inproceedings} & Approach/ Technique& Implementation & Functional Requirements&  Requirements Model\\
+            \hline Syntactic Rules of Extracting Test Cases from Software Requirements  & \cite{masuda2016syntactic} & Approach/ Technique& Implementation & Functional Requirements & Syntactic Rules for Test Case Generation\\
+            \hline Test Case Reuse based on ESIM Model  & \cite{chen2021test} & Approach/ Technique& Implementation & New Test Case & Test Cases Similarity\\
             \hline A Linguistic Analysis Engine for Natural Language Use Case Description and Its Application to Dependability Analysis in Industrial Use Cases
-              & \cite{sinha2009linguistic} & --& Implementation & Use Case Descriptions & Use Case Description Model\\
-            \hline Using Natural Language Processing Techniques to Improve Manual Test Case Descriptions & \cite{viggiato2022using} & --& Implementation & NL Test Case Descriptions & 
+              & \cite{sinha2009linguistic} & Approach/ Technique& Implementation & Use Case Descriptions & Use Case Description Model\\
+            \hline Using Natural Language Processing Techniques to Improve Manual Test Case Descriptions & \cite{viggiato2022using} & Framework& Implementation & NL Test Case Descriptions & 
             Test Case Improvement Recommendations\\
             \hline A Natural Language Processing (NLP) Framework for Embedded Systems to Automatically Extract Verification Aspects from Textual Design Requirements
-            & \cite{anwar2020natural} & --& Implementation & Textual Design Requirements & Verification Assertions\\
-            \hline Automatically Generating Precise Oracles from Structured Natural Language Specifications & \cite{8812070} & --& Implementation & Test Case Specifications Document & Test Case Code\\
-            \hline On Learning Meaningful Assert Statements for Unit Test Cases & \cite{9283916} & --& Implementation & Test and Focal method context & Assert statements\\
-            \hline Building Combinatorial Test Input Model from Use Case Artefacts & \cite{preeti2017building} & --& Implementation & Use Case Specifications & Test Case Model\\
-            \hline Automatic generation of test cases and test purposes from natural language & \cite{nogueira2015automatic} & --& Implementation \& Test Execution & CNL Use Cases &Test Case Code\\
-            \hline A Fine-Grained Approach for Automated Conversion of Junit Assertions to English  & \cite{10.1145/3283812.3283819} & --& Reporting & Test Case Code Assertions & English text  \\
-            \hline CTRAS: Crowdsourced Test Report Aggregation and Summarization  & \cite{8811987} & --& Reporting & Test Report & Textual information and/or screenshots of duplicate tests \\
-            \hline Towards the identification of bug entities and relations in bug reports & \cite{li2022towards} & --& Reporting & Bug Reports & Relations between bug entities\\
-            \hline Mining Historical Test Logs to Predict Bugs and Localize Faults in the Test Logs & \cite{8812113} & --& Test Planning & Test Logs & Identified Faults\\
-            \hline The Potent Combo of Software Testing and NLP & \cite{mulla2020potent} & --& Requirement Analysis& User Stories, Test Scenario Description & Test Case Code\\
-            \hline Assisted Behavior Driven Development Using Natural Language Processing & \cite{soeken2012assisted} & --& Implementation & Test Case Code, NL Test Case Descriptions & UML class/sequence diagram\\
+            & \cite{anwar2020natural} & Framework& Implementation & Textual Design Requirements & Verification Assertions\\
+            \hline Automatically Generating Precise Oracles from Structured Natural Language Specifications & \cite{8812070} & Tool& Implementation & Test Case Specifications Document & Test Case Code\\
+            \hline On Learning Meaningful Assert Statements for Unit Test Cases & \cite{9283916} & Approach/ Technique& Implementation & Test and Focal method context & Assert statements\\
+            \hline Building Combinatorial Test Input Model from Use Case Artefacts & \cite{preeti2017building} & Approach/ Technique& Implementation & Use Case Specifications & Test Case Model\\
+            \hline Automatic generation of test cases and test purposes from natural language & \cite{nogueira2015automatic} & Tool& Implementation \& Test Execution & CNL Use Cases &Test Case Code\\
+            \hline A Fine-Grained Approach for Automated Conversion of Junit Assertions to English  & \cite{10.1145/3283812.3283819} & Tool& Reporting & Test Case Code Assertions & English text  \\
+            \hline CTRAS: Crowdsourced Test Report Aggregation and Summarization  & \cite{8811987} & Tool& Reporting & Test Report & Textual information and/or screenshots of duplicate tests \\
+            \hline Towards the identification of bug entities and relations in bug reports & \cite{li2022towards} & Approach/ Technique& Reporting & Bug Reports & Relations between bug entities\\
+            \hline Mining Historical Test Logs to Predict Bugs and Localize Faults in the Test Logs & \cite{8812113} & Tool& Test Planning & Test Logs & Identified Faults\\
+            \hline The Potent Combo of Software Testing and NLP & \cite{mulla2020potent} & Algorithm& Requirement Analysis& User Stories, Test Scenario Description & Test Case Code\\
+            \hline Assisted Behavior Driven Development Using Natural Language Processing & \cite{soeken2012assisted} & Tool& Implementation & Test Case Code, NL Test Case Descriptions & UML class/sequence diagram\\
         \hline
 \end{longtable}
 
@@ -310,7 +302,7 @@ The content of this analysis represents the Lexicon of the language which is bei
 based also on grammar rules, in order to analyze the relationship between words. Semantic Analysis is another NLP 
 step which identifies all the possible meanings of a sentence based on the interaction of each individual meaning of the words comprising it.  For example, the sentence ``I will send a friend to my letter'' will be rejected 
 during Semantic Analysis.The next type is Discourse Analysis. This kind of analysis focuses on the meaning of a text which is conveyed by the interaction of the meanings of the different sentences it contains. Lastly, we have 
-Pragmatic Analysis where sentences are re-interpreted on their real meaning like, for example, the idenitification of the subject on sentence pronouns like ``him'', ``them'' etc.\\ As far as NLG is concerned, 
+Pragmatic Analysis where sentences are re-interpreted on their real meaning like, for example, the identification of the subject on sentence pronouns like ``him'', ``them'' etc.\\ As far as NLG is concerned, 
 it refers to the creation of meaningful texts of different formats based on an input resource. The process consists of three phases which are identifying the goal of the task, planning on how this goal can 
 be achieved taking into consideration the available resources and finally, implementing the plan created into text \cite{khurana2017natural}. The majority of the papers studied in this review perform NLU. 
 However, very few papers performing NLG were also identified.
@@ -319,20 +311,20 @@ However, very few papers performing NLG were also identified.
 We will firstly analyze the techniques used which belong to the NLU component.
 Since lexical analysis aims to understand the meaning of each word individually, Part-Of-Speech (POS) tagging is one of those techniques who widely 
 contribute to this process. POS tagging is used in the majority of the reviewed papers because it performs a very important task for the text processing 
-procedure. Goal of this technique is to assign to each word the part of speech tag to which it belongs. POS tagging distinguishes wheather a word is 
+procedure. Goal of this technique is to assign to each word the part of speech tag to which it belongs. POS tagging distinguishes whether a word is 
 a noun, a verb, an adverb etc. In our case, it is frequently used in user requirements analysis in order to transform them into use cases which finally 
 helps generate the required test cases \cite{allala2019towards, wang2020automatic, rane2017automatic, 8812070, preeti2017building, mulla2020potent}. 
 Moreover, we also encountered POS tagging being used in proposed methods that focus on bug reporting and ambiguity detection in user requirements. 
-Osama et al \cite{9240680}, for example, use it to assign three different types of ambiguites (semantic, syntactic and syntax) to the information identified. \\
+Osama et al \cite{9240680}, for example, use it to assign three different types of ambiguities (semantic, syntactic and syntax) to the information identified. \\
 However, several authors moved one step further from POS tagging. Specifically, we identified two papers that adopted a slightly altered approach. 
-Pedemonte et al \cite{pedemonte2012towards} utilize BIO tagging \cite{ramshaw1999text}. BIO tagging faciliates the process of creating or identifying chunks of words or sentences in a text. 
+Pedemonte et al \cite{pedemonte2012towards} utilize BIO tagging \cite{ramshaw1999text}. BIO tagging facilliates the process of creating or identifying chunks of words or sentences in a text. 
 In contrast to POS, BIO tagging does not assign only one label to a token, but it inserts a prefix to each token's tag which declares its position 
-at a chunk. There are three possible prefixes which are B --- a tag is at the begginning of a chunk, I --- a tag is inside a chunk and O --- 
+at a chunk. There are three possible prefixes which are B --- a tag is at the beggining of a chunk, I --- a tag is inside a chunk and O --- 
 a tag does not exist in a chunk. The authors of this paper use this tagging method during the processing of functional test steps to finally transform them into 
 automated tests. BIO tagging specifically helps them identify the test steps more accurately into the text, considering that each test step can 
 represent a single chunk of information.\\
 The second paper we found that does not use the widely known POS tagging method is the one by Carvalho et al \cite{carvalho2014nat2testscr}. The 
-authors here implemented a strategy for the generation of automated tests by incorporating into the process the Software Cost Reduction method, which 
+authors here implemented a framework for the generation of automated tests by incorporating into the process the Software Cost Reduction method, which 
 detects and corrects errors during the requirement analysis phase. In this approach, a customized POS tagger was created in order for all the 
 needs of the study to be satisfied. This was necessary, because the input of the approach is text written in a Controlled Natural Language (CNL) 
 created by the authors called SysReq. The creation of a CNL also requires a lexicon of that language which will contain a number of its 
@@ -341,7 +333,7 @@ on its way of use inside a sentence. Since we now have a new total of textual re
 this problem as expected. Consequently, a parser customized and adapted to SysReq-CNL was developed. This parser searches all possible 
 classifications of a word into SysReq lexicon by also taking into consideration any following words that are possibly necessary in order to 
 extract the suitable meaning each time. For example, if we want to analyze the phrase ``according to", the new parser will attempt to classify 
-both ``according'' and also ``according to'' with the correct classification to be finally onbtained from ``according to'' \cite{carvalho2014nat2testscr}.\\
+both ``according'' and also ``according to'' with the correct classification to be finally obtained from ``according to'' \cite{carvalho2014nat2testscr}.\\
 
 We are now moving on to the Syntactic level of analysis in NLP which mainly contains parsing techniques used to identify the relationships 
 between words in a text. During the parsing process, we noticed a frequent use of the Stanford CoreNLP Parser\footnote{https://stanfordnlp.github.io/CoreNLP/parser-standalone.html}. 
@@ -356,9 +348,9 @@ Tahvili et al \cite{8051381} predicts the execution time of manual test cases an
 a manual test. Moreover, the proposal of Preeti et al \cite{preeti2017building} includes the step of parsing UML diagrams containing use 
 case specifications into their analysis.\\
 On the other hand, Arruda et al \cite{arruda2020automation} make use of Parsing Expression Grammar (PEG) \cite{ford2004parsing} as a 
-way to deal with encountered ambiguites on the text during parsing. The authors created their own CNL syntax and rules which then incorporated 
+way to deal with encountered ambiguities on the text during parsing. The authors created their own CNL syntax and rules which then incorporated 
 into the PEG parser. PEG parsing is slightly different than the above parsing methods discussed since, in that case, ambiguity problems are 
-solved based on the grammar rules and priority choices set during construction. Textual ambiguites also concern Sinha et al \cite{sinha2009linguistic} 
+solved based on the grammar rules and priority choices set during construction. Textual ambiguities also concern Sinha et al \cite{sinha2009linguistic} 
 who didn't develop a new CNL to their approach. Instead, they don't restrict the textual input of their method by using shallow parsing and a 
 Finite State Transducer (FST) to perform it. Shallow parsing allows us to be able to get part of the information included in the resulting parse tree. 
 However, with POS tagging we can only keep the last layer of the tree which contains just the POS tags. As far as FSTs are concerned, Finite 
