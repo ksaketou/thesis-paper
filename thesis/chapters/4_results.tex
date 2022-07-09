@@ -7,13 +7,13 @@ to the computer with the aim of solving a specific problem. Finally, in the cate
 using already existing tools and technologies. The reviewed papers have been mapped to those types and are presented in more detail in the following sections. \\
 
 The next criterion is the Software Testing Stage. We identified papers which refered to a varitey of phases such as Requirement Analysis, Test Planning, Implementation and also 
-Reporting. As we can see, we have found applications concerning a big part of the overall Testing lifecycle. As far as the Testing Type, we have made two kind of categorizations here. 
+Reporting. As we can see, we have found applications concerning a big part of the overall Testing lifecycle. As far as the Testing Type, we have made two kinds of categorizations here. 
 The first one is Manual and Automated testing, since they are both two popular test types of major significance. We next categorized the approaches based on Integration, Acceptance and Crowdsourced testing. 
 However, we also encountered many papers that do not set any limilation to the applicable testing type and, thus, provide more flexibility to that part. Another criterion we indentified is the input type of 
 the proposed approach. Some of the most frequent types we found is that of NL test case descriptions, use case specification documents and also test case code. We further analyze these types at the 
 corresponding section. As expected, we also refer to the output type as another criterion with the most common ones being the executable code, different tyes of models or diagrams (e.g. Use case/UML diagrams) and 
 others. An interesting part of this criterion that we further analyze is that several approaches generate outputs which can then be provided as input to other tools or processes in general. Last but not least, we 
-have the NLP Techniques criterion where we analyze in detail the identified NLP methods used on the papers. We study that section by separating it into two categories which are techniques refering to Natural 
+have the NLP Techniques criterion where we analyze in detail the identified NLP methods used in the papers. We study that section by separating it into two categories which are techniques refering to Natural 
 Language Understanding and techniques refering to Natural Language Generation. The Natural Lnaguage Understanding component also contains a small section where we present different statistical NLP measures which 
 are also used in the reviewed studies.\\
 
@@ -27,16 +27,16 @@ In this section, we will refer to those categories that contain a big number of 
 
 The first and most encountered contribution type is that of a tool. Almost 45,5\% of the studied papers suggest some sort of tool for the ease of different software testing processes. 
 Some of those tools are part of the overall approach, whereas others are the main focus of the study. Some of them target the test case execution process, others focus on test case 
-generation or even other areas like defects prevention and requirement analysis facilitation. Pedemonte et al \cite{pedemonte2012towards} present an approach to convert manual 
-functional tests into a state ready for automatic execution by using Machine Learning methods to process textual information. This is a semi-automatic approach since in cases 
+generation or even other areas like defects prevention and requirement analysis facilitation. Pedemonte et al \cite{pedemonte2012towards} present a way to convert manual 
+functional tests into a state ready for automatic execution by using Machine Learning methods to process textual information. The tool contains semi-automatic functionality since in cases 
 of textual information ambiguity, the user is prompted to interact with the tool to resolve the issue and provide the answer required to continue with the process. Another 
 considerable approach is the CTRAS tool created by Hao et al \cite{8811987} which aims at the summarization of duplicate test reports in oprder to make them easily understandable 
 by developers. The tool idenitfies similarities in both textual information and screenshots and comprehensibly presents them into a single report. \\
 
 Another significant contribution type we distinguished is that of a technique or approach. As we refered earlier, this type includes any proposal of approaches, processes, techniques and any 
 other alternative way of performing a certain task. We grouped them all into this category since they all somehow refer to something very similar. Specifically, 25\% of the
-studied papers suggest such an approach of that type. Rajaraman et al \cite{9197868} propose in their study a way of idenitfying dependecies between tests. The authors apply Machine Learning techniques 
-on log files in order to create a dependency graph which describes the connections and dependecies between the components of an application. This proposal widely facilitates the process of Integration 
+studied papers suggest such an approach of that type. Rajaraman et al \cite{9197868} propose in their study a way of idenitfying dependencies between tests. The authors apply Machine Learning techniques 
+on log files in order to create a dependency graph which describes the connections and dependencies between the components of an application. This proposal widely facilitates the process of Integration 
 Testing. We make a more detailed reference to that testing type at the corresponding section. Another paper that belongs to the technique category is that of Li et al \cite{li2022towards}. Here they propose 
 an automated way for extracting knowledge from historical bug reports and for also identifying relations between them. This functionality contributes to test troubleshooting activities and it can also enhance 
 the reporting stage.\\
@@ -90,7 +90,7 @@ into account that the tester now knows the approximate execution time of the tes
 
 The testing stage which gathers the majority of the attention in the scinetific literature is the implementation/development stage. That is when the test cases are created and the whole testing 
 project comes to life. At this point, it is worth mentioning that almost 63\% of the papers studied refer to that stage in some way. Because of that, we have a plethora of approach types each 
-targeting a different issue. A very common task we frequently came across is the one of test case generation, usually from Requirement Documents expressed in Natural Language. Kamalakar et all 
+targeting a different issue. A very common task we frequently came across is the one of test case generation, usually from Requirement Documents expressed in Natural Language. Kamalakar et al 
 \cite{kamalakar2013automatically}, for example, created a tool called Kirby which generates test case code from textual Requirement Specifications. Code pieces of the System Under Test 
 can be also used in order for the tool to better understand the structure and semantics. However, the framework proposed by Lafi et al \cite{9491761} in order to perform the same task is different. 
 This approach uses the Use Case Description of the Use Case Diagram expressed in UML. It is obvious that there is a variety of alternatives that achieve the same goals, which is the test case generation. 
@@ -113,7 +113,7 @@ and analysis of test code by reducing the existence of complex and difficult to 
 
 \section {Software Testing Type}
 In this section of our analysis, we focus on the test type that each approach refers to. The first kind of categorization we will perform is based on the two wide groups of manual and automated tests. 
-Those two testing approaches are widely used in software testing with each one of them serving a different purpose. Manual Testing is a well-established technique where the tester interacts with the 
+Those two testing types are widely used in software testing with each one of them serving a different purpose. Manual Testing is a well-established technique where the tester interacts with the 
 application in order to validate and ensure it functions as expected and according to requirements. He performs the steps described in the test cases by manually executing them. However, this is an 
 extremely expensive process and requires a big amount of resources with time and money being some of them. This gap fills the use of Automated Testing, where important stages like test generation and execution 
 are performed automatically. This process significantly decreases the amount of time needed to test the product and that is the reason why Automated Testing is widely used in Agile development where 
@@ -142,7 +142,7 @@ authors focused on optimizing the software testing process during Agile software
 
 Apart from the above two big groups of manual and automated tests, we identified several other more specific testing types according to which we can further characterize some of the studied approaches. Those types are 
 acceptance, integration and crowdsourced tests. The goal of acceptance tests is to determine whether the application meets functionality and usability criteria \cite{artoftesting}. These tests are performed by the 
-end users of the application. An example of such approach we identified in the papers is the one proposed by Wang et al \cite{wang2020automatic} which targets the automatic generation of acceptance test cases and also, 
+end users of the application. An example of such an approach is the one proposed by Wang et al \cite{wang2020automatic} which targets the automatic generation of acceptance test cases and also, 
 their automatic execution. Thus, the manual effort required is significantly reduced. Moving on to the Integration Testing type, it aims to verify that all the system modules and units communicate correctly 
 to perform the functionality required \cite{leung1990study}. This testing type is performed after Unit Testing which, on the other hand, tests each module of the application separately. The technique proposed by Rajaraman et 
 al \cite{9197868} targets Integration Testing. More specifically, goal of the approach is to identify interconnections and dependencies between different components of an application in order to optimize Integration Testing. 
@@ -152,14 +152,13 @@ the specific paper.\\
 The third testing type we will talk about in this section is Crowdsourced Testing. Crowdsourced Testing has been growing in popularity during the last few years with many platforms having already 
 been developed to serve that purpose, such as CrowdSprint\footnote{https://crowdsprint.com/crowdsourced-testing/} and TestBirds\footnote{https://www.testbirds.com/services/quality-assurance/}. 
 In Crowdsourced Testing, test tasks are available online for anyone who is willing to perform them and test various software products. When the test task is completed, a test report is submitted 
-describing the software's behavior \cite{cui2017should}. A paper that focuses on this testing type is one we have previously encountered in this chapter written by Yang et al \cite{9617598}. The authors 
+describing the software's behavior \cite{cui2017should}. A paper that focuses on this testing type is one we have previously encountered written by Yang et al \cite{9617598}. The authors 
 propose a method called DivClass which prioritizes the test reports coming from Crowdsource testers. Also, similar reports are identified and combined into a signle report for more effective management 
 of time during test report inspection.\\
 
 Having expanded on the Software Testing Type characteristic of this review, we notice an overall tendency of the scientific community mainly towards Automation Testing approaches and methods to further 
-evolve this practice, which is currently gaining a lot of attention. The next major field of interest is Manual Testing, an older and well established method which continues to being a part of the Software 
-Testing process. Lastly, we came up to a number of papers which emphasized on a more specific testing type without making distinctions regarding the above categories of Automated and Manual tests. Such test 
-types are Integration, Acceptance and Crowdsourced Testing. However, the approaches proposed there can be utilized during both automated and manual testing.
+evolve this practice, which is currently gaining a lot of attention. We also came up to a number of papers which emphasized on a more specific testing type without making distinctions regarding the 
+above categories of Automated and Manual tests. Such test types are Integration, Acceptance and Crowdsourced Testing. However, the approaches proposed there can be utilized during both automated and manual testing.
 
 \section{Input Type}
 The input type of the studied approaches is another significant criteria based on which we will characterize them. During our analysis, we notice 
@@ -301,11 +300,11 @@ NLU contains several steps which actually represent different analysis types \ci
 The content of this analysis represents the Lexicon of the language which is being analyzed and contains a total of words and phrases of this language. Next we have Syntactic Analysis, during which sentences are parsed, 
 based also on grammar rules, in order to analyze the relationship between words. Semantic Analysis is another NLP 
 step which identifies all the possible meanings of a sentence based on the interaction of each individual meaning of the words comprising it.  For example, the sentence ``I will send a friend to my letter'' will be rejected 
-during Semantic Analysis.The next type is Discourse Analysis. This kind of analysis focuses on the meaning of a text which is conveyed by the interaction of the meanings of the different sentences it contains. Lastly, we have 
+during Semantic Analysis. The next type is Discourse Analysis. This kind of analysis focuses on the meaning of a text which is conveyed by the interaction of the meanings of the different sentences it contains. Lastly, we have 
 Pragmatic Analysis where sentences are re-interpreted on their real meaning like, for example, the identification of the subject on sentence pronouns like ``him'', ``them'' etc.\\ As far as NLG is concerned, 
 it refers to the creation of meaningful texts of different formats based on an input resource. The process consists of three phases which are identifying the goal of the task, planning on how this goal can 
 be achieved taking into consideration the available resources and finally, implementing the plan created into text \cite{khurana2017natural}. The majority of the papers studied in this review perform NLU. 
-However, very few papers performing NLG were also identified.
+However, several papers performing NLG were also identified.
 
 \subsection{Natural Language Understanding --- NLU}
 We will firstly analyze the techniques used which belong to the NLU component.
@@ -427,7 +426,7 @@ The second paper performing NLG is the one by Watson et al \cite{9283916} who pr
 used to asses the correctness of a focal method given also a test method. The ATLAS workflow consists of several steps. First of all, we have the extraction of test methods from different Java projects available 
 on Github. Those methods proceed, then, to data mining tasks gathering the ones containing the ``@Test'' annotation as well as all the other declared methods of the projects. Then, during the data filtering 
 stage, the methods found are separated to test and focal ones and, after the context of each focal method has been identified, ATLAS generates pairs of those test and focal methods. The relevant assert statements 
-are generated as well. In order for ATLAS to learn how to successfully generate those assert statements, its uses a Recurrent Neural Network (RNN) encoder-decoder model to automate this process. RNNs are 
+are generated as well. In order for ATLAS to learn how to successfully generate those assert statements, it uses a Recurrent Neural Network (RNN) encoder-decoder model to automate this process. RNNs are 
 being frequently used in NLG tasks since it is a great way to transfer information and they can also effectively identify patterns in data.\\
 
 In our case, the Encoder is a single layer bi-directional RNN which consists of two distinct LSTM RNNs and takes as input the tokenized test method and the context of the focal method as a stream of tokens. 
