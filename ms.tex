@@ -1,0 +1,63 @@
+\documentclass[11pt, notitlepage]{report}
+\usepackage[a4paper, width=170mm, top=25mm,bottom=25mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{appendix}
+\pagestyle{plain}
+\setlength{\headheight}{12pt}
+\usepackage{hyperref}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\bibname{\Large References}
+\setcounter{secnumdepth}{5}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\section}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+\graphicspath{ {./images/} }
+
+\author{
+  Konstantina P. Saketou\\
+  \texttt{text}
+  \and
+  Panos Louridas\\
+  \texttt{text}
+}
+\date{date goes here}
+\title{Natural Language Processing in Software Testing:\\ A Systematic Literature Review}
+
+\begin{document}
+  \maketitle
+  \begin{center} 
+              \begin{abstract}
+                  \bfseries
+                      With the amount of knowledge around Natural Language Processing in Software Testing constantly growing, there is a need to provide a clear overview of the state-of-the-art 
+                      technologies to the scientific community and practitioners. This Systematic Literature Review classifies recent NLP applications in Software Testing. We organize 
+                      the already existing knowledge from a total of 44 scientific papers, based on Contribution Type, Software Testing Stage, 
+                      Software Testing Type, Input/Output Type and NLP Techniques used in the presented context. Several findings of this review are: (1) most 
+                      proposals refer to a new tool (2) many papers stick to popular NLP techniques like POS Tagging and TF-IDF to achieve their goal whereas 
+                      few of them make use of more complex methods like LSTM RNNs. This review aims to make current practices and upcoming needs accessible by simplifying 
+                      the searching process and providing recent organized information to be used as a starting point for further research.
+              \end{abstract}
+  \end{center} 
+
+
+\input{thesis/chapters/1_introduction}
+\input{thesis/chapters/2_backround_related_work.tex}
+\input{thesis/chapters/3_research_methodology.tex}
+\input{thesis/chapters/4_results.tex}
+\input{thesis/chapters/5_discussion.tex}
+\input{thesis/chapters/6_conclusion.tex}
+\bibliographystyle{unsrt}
+\bibliography{thesis/thesis_bibliography.bib}
+
+\end{document}

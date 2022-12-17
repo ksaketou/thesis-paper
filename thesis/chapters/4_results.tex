@@ -1,4 +1,4 @@
-\chapter{Results}
+\section {Results}
 
 After performing a thourough analysis on the gathered scientific papers, we came up with the categorization criteria presented in chapter 3. The contribution type criterion contains the categories 
 of tool, framework, algorithm and technique. Starting from the tools, these are pieces of software containing programs that are used to support an application's or a system's functionality. 
@@ -21,7 +21,7 @@ In this chapter, we present the results of our Systematic Literature Review and 
 each criterion individually by commenting and making a short reference to the results found. In some sections and always depending on the criterion, we further analyze any 
 techniques or practices encountered. 
 
-\section {Contribution Type}
+\subsection {Contribution Type}
 After reviewing all of the papers, we ended up with several contribution types proposed in their context. Our findings include tools, frameworks, algorithms and also techniques. 
 In this section, we will refer to those categories that contain a big number of the papers we analyzed.\\
 
@@ -56,7 +56,7 @@ the proposal of a tool in order to perform something new or to enhance a functio
 test case generation, test planning, defect prevention and others, which shape all together the overall purpose of this knowledge area and are in need of improvements in order to move one step 
 closer to complete automation of testing. Thus, many researchers and people interested in the field have figured out ways to enhance those methods by achieving great results.
 
-\section {Software Testing Stage}
+\subsection {Software Testing Stage}
 Another aspect of the papers we studied that we are interested in is the Stage of the Software Testing Lifecycle to which they apply. Some of the approaches we found refer to 
 the Requirement Analysis phase, others to the Implementation and Development, Execution etc. The first one we will comment here is the Requirement Analysis. 25\% of the studies 
 come up with a proposal regarding that stage and they target to enhance the processing of the test requirements and specifications. This procedure happens before the construction 
@@ -111,7 +111,7 @@ summarizes their content into a more comprehensive report. This process also hap
 opposite to what we have encountered so far in this review. The created tool converts JUnit Assertions into text written in English. Goal of this approach is to contribute to the maintenability, understandability 
 and analysis of test code by reducing the existence of complex and difficult to explain code.
 
-\section {Software Testing Type}
+\subsection {Software Testing Type}
 In this section of our analysis, we focus on the test type that each approach refers to. The first kind of categorization we will perform is based on the two wide groups of manual and automated tests. 
 Those two testing types are widely used in software testing with each one of them serving a different purpose. Manual Testing is a well-established technique where the tester interacts with the 
 application in order to validate and ensure it functions as expected and according to requirements. He performs the steps described in the test cases by manually executing them. However, this is an 
@@ -121,7 +121,7 @@ software releases are continuous and more frequent. Moreover, a big number of pa
 the overall testing process. The results of the analysis based on Testing Type are also presented in Figure 1.\\
 
 \begin{figure}[h]
-    \includegraphics[width=15cm]{testing_type_diagram.jpg}
+    \includegraphics[width=15cm]{figure1.png}
     \centering
 \end{figure}
 
@@ -160,7 +160,7 @@ Having expanded on the Software Testing Type characteristic of this review, we n
 evolve this practice, which is currently gaining a lot of attention. We also came up to a number of papers which emphasized on a more specific testing type without making distinctions regarding the 
 above categories of Automated and Manual tests. Such test types are Integration, Acceptance and Crowdsourced Testing. However, the approaches proposed there can be utilized during both automated and manual testing.
 
-\section{Input Type}
+\subsection {Input Type}
 The input type of the studied approaches is another significant criteria based on which we will characterize them. During our analysis, we notice 
 that the nature of the input that each method accepts varies from being some sort of test case code, requirement and use case documents. However, the 
 majority of the inputs represent information written in natural language.\\
@@ -194,7 +194,7 @@ After the analysis of the different input types of the suggested approaches, we 
 information is usually expressed in natural language in order for the corresponding method or tool to perform the task required. Since the papers we study combine Natural Language Processing Techniques with 
 Software Testing, it is more than reasonable for the proposed approaches to make good use of textual information of all sorts. This is another way through which the whole contribution of the NLP knowledge area is evident.
 
-\section{Output Type}
+\subsection {Output Type}
 We are now moving on to the output type characteristic based on which we will continue our analysis. The different output types distinguished seem to serve multiple purposes. Several approaches generate 
 results ready to be used and to enhance the testing process, whereas others create information which can then act as input into another tool, framework or process. Test reports is another frequently encountered type 
 which sometimes is also seen to incorporate bug reporting information.\\
@@ -292,7 +292,7 @@ the above criteria is shown in \hyperref[table2]{Table 2} below.
         \hline
 \end{longtable}
 
-\section{NLP Techniques}
+\subsection {NLP Techniques}
 The field of Natural Language Processing (NLP) consists of two different components each referring to a specific task. The first one is Natural Language Understanding (NLU) and the second one is Natural Language 
 Generation (NLG) \cite{liddy2001natural, khurana2017natural}. NLU involves the study and processing of text in multiple levels and aspects (e.g. syntactical, morphological etc.), in order to map the given textual 
 information into useful representations. \\
@@ -306,7 +306,7 @@ it refers to the creation of meaningful texts of different formats based on an i
 be achieved taking into consideration the available resources and finally, implementing the plan created into text \cite{khurana2017natural}. The majority of the papers studied in this review perform NLU. 
 However, several papers performing NLG were also identified.
 
-\subsection{Natural Language Understanding --- NLU}
+\subsubsection* {Natural Language Understanding --- NLU}
 We will firstly analyze the techniques used which belong to the NLU component.
 Since lexical analysis aims to understand the meaning of each word individually, Part-Of-Speech (POS) tagging is one of those techniques who widely 
 contribute to this process. POS tagging is used in the majority of the reviewed papers because it performs a very important task for the text processing 
@@ -378,7 +378,7 @@ and it is easier to spot dependences and semantic relationships between them. Gr
 to identify third person pronouns in formal requirement documents. Moreover, Sinha et al \cite{sinha2009linguistic} have dedicated a whole component of their approach to Anaphora Resolution where they use a 
 specialized version of \cite{kennedy1996anaphora} to achieve the expected results.
 
-\subsubsection*{Statistical Measures for NLP}
+\subsubsection* {Statistical Measures for NLP}
 Apart from the different techniques used in the papers, many of them also utilize different statistical metrics to measure frequency and similarity of entities like words and sentences. 
 In this section, we present the most popular metrics among the ones we identified.\\
 
@@ -415,7 +415,7 @@ two sentences \(x\) and \(x'\) as:
                                                                 0,    &   otherwise \end{cases} \]
 At the above formulas, we consider as \(x_i\) the normalized frequency of the word \(w_i\) in the text, whereas the vector \(v_i\) is the word embedding of \(w_i\).\\
 
-\subsection{Natural Language Generation --- NLG}
+\subsubsection* {Natural Language Generation --- NLG}
 Having completed our analysis on the NLU techniques used in the studied papers, in this section we will refer to the NLG techniques identified. Specifically, we found two papers which make use of 
 text generation methods and, thus, have natural language outputs. Gonzalez et al \cite{10.1145/3283812.3283819} created a code summarization tool which specifically translates JUnit assertions to English text. 
 That way, the maintainability, understandability and overall analysis of software and tests is being highly improved. To achieve that, the authors used the SimpleNLG engine. SimpleNLG was introduced by Gatt et al 

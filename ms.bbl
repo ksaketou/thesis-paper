@@ -1,0 +1,477 @@
+\begin{thebibliography}{10}
+
+\bibitem{swebok}
+Pierre Bourque, Robert Dupuis, Alain Abran, James~W Moore, and Leonard Tripp.
+\newblock {\em The guide to the {S}oftware {E}ngineering {B}ody {O}f
+  {K}nowledge v3.0}.
+\newblock IEEE, 2014.
+
+\bibitem{testautomation}
+Vahid Garousi and Frank Elberzhager.
+\newblock Test {A}utomation: not just for test execution.
+\newblock {\em IEEE Software}, 34(2):90--96, 2017.
+
+\bibitem{introautotesting}
+Vahid Garousi and Erdem Yildirim.
+\newblock Introducing automated {GUI} testing and observing its benefits: an
+  industrial case study in the context of law-practice management software.
+\newblock In {\em 2018 IEEE International Conference on Software Testing,
+  Verification and Validation Workshops (ICSTW)}, pages 138--145. IEEE, 2018.
+
+\bibitem{liddy2001natural}
+Elizabeth~D Liddy.
+\newblock Natural {L}anguage {P}rocessing.
+\newblock {\em In Encyclopedia of Library and Information Science, 2nd Ed. NY.
+  Marcel Decker, Inc.}, 2001.
+
+\bibitem{infoextraction}
+Sunita Sarawagi.
+\newblock Information {E}xtraction.
+\newblock {\em Found. Trends Databases}, 1(3):261–377, mar 2008.
+
+\bibitem{garousi2020nlp}
+Vahid Garousi, Sara Bauer, and Michael Felderer.
+\newblock {NLP}-assisted software testing: {A} systematic mapping of the
+  literature.
+\newblock {\em Information and Software Technology}, 126:106321, 2020.
+
+\bibitem{battina2019artificial}
+Dhaya~Sindhu Battina.
+\newblock Artificial {I}ntelligence in {S}oftware {T}est {A}utomation: {A}
+  {S}ystematic {L}iterature {R}eview.
+\newblock {\em International Journal of Emerging Technologies and Innovative
+  Research (www. jetir. org| UGC and issn Approved), ISSN}, pages 2349--5162,
+  2019.
+
+\bibitem{ahsan2017comprehensive}
+Imran Ahsan, Wasi~Haider Butt, Mudassar~Adeel Ahmed, and Muhammad~Waseem Anwar.
+\newblock A comprehensive investigation of natural language processing
+  techniques and tools to generate automated test cases.
+\newblock In {\em Proceedings of the Second International Conference on
+  Internet of things, Data and Cloud Computing}, pages 1--10, 2017.
+
+\bibitem{escalona2011overview}
+Mar{\'\i}a~Jos{\'e} Escalona, Javier~J Gutierrez, Manuel Mej{\'\i}as, Gustavo
+  Arag{\'o}n, Isabel Ramos, Jes{\'u}s Torres, and Francisco~Jos{\'e}
+  Dom{\'\i}nguez.
+\newblock An overview on test generation from functional requirements.
+\newblock {\em Journal of Systems and Software}, 84(8):1379--1393, 2011.
+
+\bibitem{reqeng1}
+Fabiano Dalpiaz and Sjaak Brinkkemper.
+\newblock Agile requirements engineering: From user stories to software
+  architectures.
+\newblock In {\em 2021 IEEE 29th International Requirements Engineering
+  Conference (RE)}, pages 504--505, 2021.
+
+\bibitem{8701252}
+Sarika Sharma and Deepak Kumar.
+\newblock Agile release planning using natural language processing algorithm.
+\newblock In {\em 2019 Amity International Conference on Artificial
+  Intelligence (AICAI)}, pages 934--938, 2019.
+
+\bibitem{pedemonte2012towards}
+Pablo Pedemonte, Jalal Mahmud, and Tessa Lau.
+\newblock Towards automatic functional test execution.
+\newblock In {\em Proceedings of the 2012 ACM international conference on
+  Intelligent User Interfaces}, pages 227--236, 2012.
+
+\bibitem{8811987}
+Rui Hao, Yang Feng, James~A. Jones, Yuying Li, and Zhenyu Chen.
+\newblock {CTRAS}: {C}rowdsourced {T}est {R}eport {A}ggregation and
+  {S}ummarization.
+\newblock In {\em 2019 IEEE/ACM 41st International Conference on Software
+  Engineering (ICSE)}, pages 900--911, 2019.
+
+\bibitem{9197868}
+R~Rajaraman, P~K Kapur, and Deepak Kumar.
+\newblock Determining {S}oftware {I}nter-{D}ependency {P}atterns for
+  {I}ntegration {T}esting by applying {M}achine learning on {L}ogs and
+  {T}elemetry data.
+\newblock In {\em 2020 8th International Conference on Reliability, Infocom
+  Technologies and Optimization (Trends and Future Directions) (ICRITO)}, pages
+  1080--1084, 2020.
+
+\bibitem{li2022towards}
+Bin Li, Ying Wei, Xiaobing Sun, Lili Bo, Dingshan Chen, and Chuanqi Tao.
+\newblock Towards the identification of bug entities and relations in bug
+  reports.
+\newblock {\em Automated Software Engineering}, 29(1):1--31, 2022.
+
+\bibitem{9491761}
+Mohammed Lafi, Thamer Alrawashed, and Ahmad~Munir Hammad.
+\newblock Automated {T}est {C}ases {G}eneration {F}rom {R}equirements
+  {S}pecification.
+\newblock In {\em 2021 International Conference on Information Technology
+  (ICIT)}, pages 852--857, 2021.
+
+\bibitem{viggiato2022using}
+Markos Viggiato, Dale Paas, Chris Buzon, and Cor-Paul Bezemer.
+\newblock Using {N}atural {L}anguage {P}rocessing techniques to improve manual
+  test case descriptions.
+\newblock In {\em International Conference on Software Engineering-Software
+  Engineering in Practice (ICSE-SEIP)}, 2022.
+
+\bibitem{reqclass}
+Abhishek Sainani, Preethu Rose, Vivek Joshi, and Smita Ghaisas.
+\newblock Extracting and {C}lassifying {R}equirements from {S}oftware
+  {E}ngineering {C}ontracts.
+\newblock In {\em 2020 IEEE 28th International Requirements Engineering
+  Conference (RE)}, pages 147--157, 08 2020.
+
+\bibitem{femmer2017rapid}
+Henning Femmer, Daniel~M{\'e}ndez Fern{\'a}ndez, Stefan Wagner, and Sebastian
+  Eder.
+\newblock Rapid {Q}uality {A}ssurance with {R}equirements {S}mells.
+\newblock {\em Journal of Systems and Software}, 123:190--213, 2017.
+
+\bibitem{fowler2018refactoring}
+Martin Fowler.
+\newblock {\em Refactoring: improving the design of existing code}.
+\newblock Addison-Wesley Professional, 2018.
+
+\bibitem{9617598}
+Yuxuan Yang and Xin Chen.
+\newblock Crowdsourced {T}est {R}eport {P}rioritization {B}ased on {T}ext
+  {C}lassification.
+\newblock {\em IEEE Access}, pages 1--1, 2021.
+
+\bibitem{8051381}
+Sahar Tahvili, Mehrdad Saadatmand, Markus Bohlin, Wasif Afzal, and
+  Sharvathul~Hasan Ameerjan.
+\newblock Towards {E}xecution {T}ime {P}rediction for {M}anual {T}est {C}ases
+  from {T}est {S}pecification.
+\newblock In {\em 2017 43rd Euromicro Conference on Software Engineering and
+  Advanced Applications (SEAA)}, pages 421--425, 2017.
+
+\bibitem{kamalakar2013automatically}
+Sunil Kamalakar, Stephen~H Edwards, and Tung~M Dao.
+\newblock Automatically {G}enerating {T}ests from {N}atural {L}anguage
+  {D}escriptions of {S}oftware {B}ehavior.
+\newblock In {\em 8th International Conference on Evaluation of Novel
+  Approaches to Software Engineering (ENASE-2013)}, pages 238--245, 2013.
+
+\bibitem{10.1145/3283812.3283819}
+Danielle Gonzalez, Suzanne Prentice, and Mehdi Mirakhorli.
+\newblock A {F}ine-{G}rained {A}pproach for {A}utomated {C}onversion of {JU}nit
+  {A}ssertions to {E}nglish.
+\newblock In {\em Proceedings of the 4th ACM SIGSOFT International Workshop on
+  NLP for Software Engineering}, NL4SE 2018, page 14–17, New York, NY, USA,
+  2018. Association for Computing Machinery.
+
+\bibitem{zhang2014systematic}
+Man Zhang, Tao Yue, Shaukat Ali, Huihui Zhang, and Ji~Wu.
+\newblock A systematic approach to automatically derive test cases from use
+  cases specified in restricted natural languages.
+\newblock In {\em International Conference on System Analysis and Modeling},
+  pages 142--157. Springer, 2014.
+
+\bibitem{litmus}
+Anurag Dwarakanath and Shubhashis Sengupta.
+\newblock Litmus: {G}eneration of {T}est {C}ases from {F}unctional
+  {R}equirements in {N}atural {L}anguage.
+\newblock In {\em 17th International conference on Applications of Natural
+  Language Processing and Information Systems}, pages 58--69, 06 2012.
+
+\bibitem{rane2017automatic}
+Prerana~Pradeepkumar Rane.
+\newblock {\em Automatic generation of test cases for {A}gile using {N}atural
+  {L}anguage {P}rocessing}.
+\newblock PhD thesis, Virginia Tech, 2017.
+
+\bibitem{artoftesting}
+Glenford~J Myers, Corey Sandler, and Tom Badgett.
+\newblock {\em The {A}rt of {S}oftware {T}esting}.
+\newblock John Wiley \& Sons, 2011.
+
+\bibitem{wang2020automatic}
+Chunhui Wang, Fabrizio Pastore, Arda Goknil, and Lionel Briand.
+\newblock Automatic generation of acceptance test cases from use case
+  specifications: an {NLP}-based approach.
+\newblock {\em IEEE Transactions on Software Engineering}, 2020.
+
+\bibitem{leung1990study}
+Hareton~KN Leung and Lee White.
+\newblock A study of integration testing and software regression at the
+  integration level.
+\newblock In {\em Proceedings. Conference on Software Maintenance 1990}, pages
+  290--301. IEEE, 1990.
+
+\bibitem{cui2017should}
+Qiang Cui, Junjie Wang, Guowei Yang, Miao Xie, Qing Wang, and Mingshu Li.
+\newblock Who should be selected to perform a task in crowdsourced testing?
+\newblock In {\em 2017 IEEE 41st Annual Computer Software and Applications
+  Conference (COMPSAC)}, volume~1, pages 75--84. IEEE, 2017.
+
+\bibitem{9609160}
+Hiroyuki Kirinuki, Shinsuke Matsumoto, Yoshiki Higo, and Shinji Kusumoto.
+\newblock {NLP}-assisted {W}eb {E}lement {I}dentification {T}oward
+  {S}cript-free {T}esting.
+\newblock In {\em 2021 IEEE International Conference on Software Maintenance
+  and Evolution (ICSME)}, pages 639--643, 2021.
+
+\bibitem{arruda2020automation}
+Filipe Arruda, Fl{\'a}via Barros, and Augusto Sampaio.
+\newblock Automation and consistency analysis of test cases written in natural
+  language: {A}n industrial context.
+\newblock {\em Science of Computer Programming}, 189:102377, 2020.
+
+\bibitem{nogueira2015automatic}
+Sidney Nogueira, Hugo~LS Araujo, Renata Araujo, Juliano Iyoda, and Augusto
+  Sampaio.
+\newblock Automatic generation of test cases and test purposes from natural
+  language.
+\newblock In {\em Brazilian Symposium on Formal Methods}, pages 145--161.
+  Springer, 2015.
+
+\bibitem{mulla2020potent}
+Nilofar Mulla and Naveenkumar Jayakumar.
+\newblock The potent combo of software testing and nlp.
+\newblock In {\em ICDSMLA 2019}, pages 1623--1632. Springer, 2020.
+
+\bibitem{inproceedings}
+Robin Gröpler, Viju Sudhi, Emilio José, Calleja García, and Andre Bergmann.
+\newblock {NLP}-{B}ased {R}equirements {F}ormalization for {A}utomatic {T}est
+  {C}ase {G}eneration.
+\newblock In {\em 29th International Workshop on Concurrency, Specification and
+  Programming (CS\&P'21)At: Berlin, Germany}, 09 2021.
+
+\bibitem{bergeron2006verification}
+Janick Bergeron, Eduard Cerny, Alan Hunter, and Andrew Nightingale.
+\newblock {\em Verification methodology manual for SystemVerilog}, volume~1.
+\newblock Springer, 2006.
+
+\bibitem{10.1145/3368089.3417067}
+Linyi Li, Zhenwen Li, Weijie Zhang, Jun Zhou, Pengcheng Wang, Jing Wu, Guanghua
+  He, Xia Zeng, Yuetang Deng, and Tao Xie.
+\newblock Clustering {T}est {S}teps in {N}atural {L}anguage toward {A}utomating
+  {T}est {A}utomation.
+\newblock In {\em Proceedings of the 28th ACM Joint Meeting on European
+  Software Engineering Conference and Symposium on the Foundations of Software
+  Engineering}, ESEC/FSE 2020, page 1285–1295, New York, NY, USA, 2020.
+  Association for Computing Machinery.
+
+\bibitem{harmain2000cm}
+Harmain~Mohamed Harmain and R~Gaizauskas.
+\newblock {CM-B}uilder: an automated {NL}-based {CASE} tool.
+\newblock In {\em Proceedings ASE 2000. Fifteenth IEEE International Conference
+  on Automated Software Engineering}, pages 45--53. IEEE, 2000.
+
+\bibitem{kamalrudin2017maramaaic}
+Massila Kamalrudin, John Hosking, and John Grundy.
+\newblock Maramaaic: tool support for consistency management and validation of
+  requirements.
+\newblock {\em Automated software engineering}, 24(1):1--45, 2017.
+
+\bibitem{wong2015dase}
+Edmund Wong, Lei Zhang, Song Wang, Taiyue Liu, and Lin Tan.
+\newblock {Dase}: {D}ocument-assisted symbolic execution for improving
+  {A}utomated {S}oftware {T}esting.
+\newblock In {\em 2015 IEEE/ACM 37th IEEE International Conference on Software
+  Engineering}, volume~1, pages 620--631. IEEE, 2015.
+
+\bibitem{ambriola1997processing}
+Vincenzo Ambriola and Vincenzo Gervasi.
+\newblock Processing {N}atural {L}anguage {R}equirements.
+\newblock In {\em Proceedings 12th IEEE International Conference Automated
+  Software Engineering}, pages 36--45. IEEE, 1997.
+
+\bibitem{6693114}
+Smita Ghaisas, Manish Motwani, and Preethu~Rose Anish.
+\newblock Detecting system use cases and validations from documents.
+\newblock In {\em 2013 28th IEEE/ACM International Conference on Automated
+  Software Engineering (ASE)}, pages 568--573, 2013.
+
+\bibitem{9240680}
+Mohamed Osama, Aya Zaki-Ismail, Mohamed Abdelrazek, John Grundy, and Amani
+  Ibrahim.
+\newblock Score-{B}ased {A}utomatic {D}etection and {R}esolution of {S}yntactic
+  {A}mbiguity in {N}atural {L}anguage {R}equirements.
+\newblock In {\em 2020 IEEE International Conference on Software Maintenance
+  and Evolution (ICSME)}, pages 651--661, 2020.
+
+\bibitem{allala2019towards}
+Sai~Chaithra Allala, Juan~P Sotomayor, Dionny Santiago, Tariq~M King, and
+  Peter~J Clarke.
+\newblock Towards transforming user requirements to test cases using {MDE} and
+  {NLP}.
+\newblock In {\em 2019 IEEE 43rd Annual Computer Software and Applications
+  Conference (COMPSAC)}, volume~2, pages 350--355. IEEE, 2019.
+
+\bibitem{carvalho2014nat2testscr}
+Gustavo Carvalho, Diogo Falcao, Fl{\'a}via Barros, Augusto Sampaio, Alexandre
+  Mota, Leonardo Motta, and Mark Blackburn.
+\newblock {NAT2TESTSCR}: {T}est case generation from natural language
+  requirements based on {SCR} specifications.
+\newblock {\em Science of Computer Programming}, 95:275--297, 2014.
+
+\bibitem{10.1145/3278186.3278194}
+Dionny Santiago, Peter~J. Clarke, Patrick Alt, and Tariq~M. King.
+\newblock Abstract {F}low {L}earning for {W}eb {A}pplication {T}est
+  {G}eneration.
+\newblock In {\em Proceedings of the 9th ACM SIGSOFT International Workshop on
+  Automating TEST Case Design, Selection, and Evaluation}, page 49–55, New
+  York, NY, USA, 2018. Association for Computing Machinery.
+
+\bibitem{mai2018natural}
+Xuan~Phu Mai, Fabrizio Pastore, Arda G{\"o}knil, and Lionel Briand.
+\newblock A natural language programming approach for requirements-based
+  security testing.
+\newblock In {\em 29th IEEE International Symposium on Software Reliability
+  Engineering (ISSRE 2018)}. IEEE, 2018.
+
+\bibitem{10.1145/3195538.3195540}
+Sahar Tahvili, Leo Hatvani, Michael Felderer, Wasif Afzal, Mehrdad Saadatmand,
+  and Markus Bohlin.
+\newblock Cluster-{B}ased {T}est {S}cheduling {S}trategies {U}sing {S}emantic
+  {R}elationships between {T}est {S}pecifications.
+\newblock In {\em Proceedings of the 5th International Workshop on Requirements
+  Engineering and Testing}, RET '18, page 1–4, New York, NY, USA, 2018.
+  Association for Computing Machinery.
+
+\bibitem{mueller2010generation}
+Wolfgang Mueller, Alexander Bol, Alexander Krupp, and Ola Lundkvist.
+\newblock Generation of executable testbenches from {N}atural {L}anguage
+  requirement specifications for embedded real-time systems.
+\newblock In {\em Distributed, Parallel and Biologically Inspired Systems},
+  pages 78--89. Springer, 2010.
+
+\bibitem{7972390}
+Ahlam Ansari, Mirza~Baig Shagufta, Ansari Sadaf~Fatima, and Shaikh Tehreem.
+\newblock Constructing {T}est cases using {N}atural {L}anguage {P}rocessing.
+\newblock In {\em 2017 Third International Conference on Advances in
+  Electrical, Electronics, Information, Communication and Bio-Informatics
+  (AEEICB)}, pages 95--99, 2017.
+
+\bibitem{masuda2016syntactic}
+Satoshi Masuda, Tohru Matsuodani, and Kazuhiko Tsuda.
+\newblock Syntactic rules of extracting test cases from software requirements.
+\newblock In {\em Proceedings of the 2016 8th International Conference on
+  Information Management and Engineering}, pages 12--17, 2016.
+
+\bibitem{chen2021test}
+Xiaomeng Chen, Jinbo Wang, Shan Zhou, Panpan Xue, and Jiao Jia.
+\newblock Test {C}ase {R}euse based on {ESIM} {M}odel.
+\newblock In {\em 2021 8th International Conference on Dependable Systems and
+  Their Applications (DSA)}, pages 700--705. IEEE, 2021.
+
+\bibitem{sinha2009linguistic}
+Avik Sinha, Amit Paradkar, Palani Kumanan, and Branimir Boguraev.
+\newblock A linguistic analysis engine for natural language use case
+  description and its application to dependability analysis in industrial use
+  cases.
+\newblock In {\em 2009 IEEE/IFIP International Conference on Dependable Systems
+  \& Networks}, pages 327--336. IEEE, 2009.
+
+\bibitem{anwar2020natural}
+Muhammad~Waseem Anwar, Imran Ahsan, Farooque Azam, Wasi~Haider Butt, and
+  Muhammad Rashid.
+\newblock A {N}atural {L}anguage {P}rocessing ({NLP}) framework for embedded
+  systems to automatically extract verification aspects from textual design
+  requirements.
+\newblock In {\em Proceedings of the 2020 12th International Conference on
+  Computer and Automation Engineering}, pages 7--12, 2020.
+
+\bibitem{8812070}
+Manish Motwani and Yuriy Brun.
+\newblock Automatically {G}enerating {P}recise {O}racles from {S}tructured
+  {N}atural {L}anguage {S}pecifications.
+\newblock In {\em 2019 IEEE/ACM 41st International Conference on Software
+  Engineering (ICSE)}, pages 188--199, 2019.
+
+\bibitem{9283916}
+Cody Watson, Michele Tufano, Kevin Moran, Gabriele Bavota, and Denys
+  Poshyvanyk.
+\newblock On {L}earning {M}eaningful {A}ssert {S}tatements for {U}nit {T}est
+  {C}ases.
+\newblock In {\em 2020 IEEE/ACM 42nd International Conference on Software
+  Engineering (ICSE)}, pages 1398--1409, 2020.
+
+\bibitem{preeti2017building}
+S~Preeti, B~Milind, Medhini~S Narayan, and Krishnan Rangarajan.
+\newblock Building combinatorial test input model from use case artefacts.
+\newblock In {\em 2017 IEEE International Conference on Software Testing,
+  Verification and Validation Workshops (ICSTW)}, pages 220--228. IEEE, 2017.
+
+\bibitem{8812113}
+Anunay Amar and Peter~C. Rigby.
+\newblock Mining {H}istorical {T}est {L}ogs to {P}redict {B}ugs and {L}ocalize
+  {F}aults in the {T}est {L}ogs.
+\newblock In {\em 2019 IEEE/ACM 41st International Conference on Software
+  Engineering (ICSE)}, pages 140--151, 2019.
+
+\bibitem{soeken2012assisted}
+Mathias Soeken, Robert Wille, and Rolf Drechsler.
+\newblock Assisted {B}ehavior {D}riven {D}evelopment using {N}atural {L}anguage
+  {P}rocessing.
+\newblock In {\em International Conference on Modelling Techniques and Tools
+  for Computer Performance Evaluation}, pages 269--287. Springer, 2012.
+
+\bibitem{khurana2017natural}
+Diksha Khurana, Aditya Koli, Kiran Khatter, and Sukhdev Singh.
+\newblock Natural {L}language {P}rocessing: {S}tate of the art, current trends
+  and challenges.
+\newblock {\em arXiv preprint arXiv:1708.05148}, 2017.
+
+\bibitem{ramshaw1999text}
+Lance~A Ramshaw and Mitchell~P Marcus.
+\newblock Text chunking using transformation-based learning.
+\newblock In {\em Natural language processing using very large corpora}, pages
+  157--176. Springer, 1999.
+
+\bibitem{ford2004parsing}
+Bryan Ford.
+\newblock Parsing expression grammars: a recognition-based syntactic
+  foundation.
+\newblock In {\em Proceedings of the 31st ACM SIGPLAN-SIGACT symposium on
+  Principles of programming languages}, pages 111--122, 2004.
+
+\bibitem{hobbs1997extracting}
+Jerry~R Hobbs, Douglas Appelt, John Bear, David Israel, Megumi Kameyama, Mark
+  Stickel, and Mabry Tyson.
+\newblock Extracting {I}nformation from {N}atural-{L}anguage {T}ext.
+\newblock {\em Finite-state language processing}, page 383, 1997.
+
+\bibitem{mikolov2013distributed}
+Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg~S Corrado, and Jeff Dean.
+\newblock Distributed representations of words and phrases and their
+  compositionality.
+\newblock {\em Advances in neural information processing systems}, 26, 2013.
+
+\bibitem{mikolov2013efficient}
+Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
+
+\bibitem{10.5555/203987.203989}
+Shalom Lappin and Herbert~J. Leass.
+\newblock An {A}lgorithm for {P}ronominal {A}naphora {R}esolution.
+\newblock {\em Comput. Linguist.}, 20(4):535–561, dec 1994.
+
+\bibitem{kennedy1996anaphora}
+Christopher Kennedy and Branimir Boguraev.
+\newblock Anaphora for everyone: {P}ronominal anaphora resolution without a
+  parser.
+\newblock In {\em COLING 1996 Volume 1: The 16th International Conference on
+  Computational Linguistics}, 1996.
+
+\bibitem{salton1988term}
+Gerard Salton and Christopher Buckley.
+\newblock Term-weighting approaches in automatic text retrieval.
+\newblock {\em Information processing \& management}, 24(5):513--523, 1988.
+
+\bibitem{pmlr-v37-kusnerb15}
+Matt Kusner, Yu~Sun, Nicholas Kolkin, and Kilian Weinberger.
+\newblock From {W}ord {E}mbeddings {T}o {D}ocument {D}istances.
+\newblock In Francis Bach and David Blei, editors, {\em Proceedings of the 32nd
+  International Conference on Machine Learning}, volume~37 of {\em Proceedings
+  of Machine Learning Research}, pages 957--966, Lille, France, 07--09 Jul
+  2015. PMLR.
+
+\bibitem{gatt2009simplenlg}
+Albert Gatt and Ehud Reiter.
+\newblock Simple{NLG}: {A} realisation engine for practical applications.
+\newblock In {\em Proceedings of the 12th European Workshop on Natural Language
+  Generation (ENLG 2009)}, pages 90--93, 2009.
+
+\end{thebibliography}
